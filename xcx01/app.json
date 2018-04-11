@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/product/product",
+    "pages/shopping/shopping",
+    "pages/info/info",
+    "pages/online/online"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#080",
+    "navigationBarTitleText": "黄冈网校",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FF4040"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d42374",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/tab_home_s_1x.png",
+        "iconPath": "images/tab_home_un_1x.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tab_product_s_1x.png",
+        "iconPath": "images/tab_product_un_1x.png",
+        "pagePath": "pages/product/product",
+        "text": "课程"
+      },
+      {
+        "selectedIconPath": "images/tab_online_s_1x.png",
+        "iconPath": "images/tab_online_un_1x.png",
+        "pagePath": "pages/online/online",
+        "text": "微课堂"
+      },
+      {
+        "selectedIconPath": "images/tab_info_s_1x.png",
+        "iconPath": "images/tab_info_un_1x.png",
+        "pagePath": "pages/info/info",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
