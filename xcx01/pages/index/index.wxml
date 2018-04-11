@@ -1,13 +1,19 @@
 <!--index.wxml-->
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{current}}' bindchange="bindChange" class="swiper">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class='navigator-hover'>
+        <image src="{{item.url}}" class="sliding-img" bindtouchstart='touchStart' bindtouchend='touchEnd' bindtap='touchEvent'>
+        </image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
 <view class='swiper-container'>
-    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{swiperCurrent}}' bindchange='swiperChange' class="swiper">
-        <block wx:for="{{imgUrls}}" wx:key="unique">
-            <swiper-item>
-                <image src="{{item}}" class="img" bindtap='swipClick'>
-                </image>
-            </swiper-item>
-        </block>
-    </swiper>
+    <button bindtap="changeIndicatorDocts">indicator-dots</button>
+    <button bindtap="changeAutoplay">autoplay</button>
+    <slider bindchange="intervalChange" show-value min="500" max="2000"></slider>
+    <slider bindchange="durationChange" show-value min="1000" max="10000"></slider>
 </view>
 <view class="container">
   <view class="userinfo">
