@@ -11,14 +11,18 @@ Page({
     duration: 500,
     circular: true,
     lastTapDiffTime: 0,
+    id: 11,
     imgUrls: [
       {
+        id: '1',
         link:'/pages/product/product',
         url:'https://p3.pstatp.com/large/43700001e49d85d3ab52'
       },{
+        id: '2',
         link:'/pages/online/online',
         url:'https://p3.pstatp.com/large/39f600038907bf3b9c96'
       },{
+        id: '3',
         link:'/pages/info/info',
         url:'https://p3.pstatp.com/large/31fa0003ed7228adf421'
       }
@@ -29,7 +33,7 @@ Page({
     //  '../images/home_bar_3'
     //],
     //motto: 'Hello World',
-    //userInfo: {},
+    userInfo: {},
     //hasUserInfo: false,
     //canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -103,6 +107,12 @@ Page({
 
     //将本次点击触摸时间设置为上一次触摸时间
     this.setData({lastTapDiffTime: curTime});
+  },
+  redirectClick: function (e) {
+    console.log(e.currentTarget.dataset.id);
+    console.log(e.currentTarget.dataset.link);
+    console.log(e);
+    console.log(e.currentTarget.dataset.url);
   },
   swiperChange: function (e) {
     this.setData({

@@ -1,20 +1,13 @@
 <!--index.wxml-->
-<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{current}}' bindchange="bindChange" class="swiper">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{current}}'>
+  <block wx:for="{{imgUrls}}" wx:key="id">
+    <swiper-item bindtap="redirectClick" data-index="{{index}}" data-id="{{item.id}}" data-link="{{item.link}}" data-url="{{item.url}}">
       <navigator url="{{item.link}}" hover-class='navigator-hover'>
-        <image src="{{item.url}}" class="sliding-img" bindtouchstart='touchStart' bindtouchend='touchEnd' bindtap='touchEvent'>
-        </image>
+        <image src="{{item.url}}" class="slide-img" width="500" height="400" />
       </navigator>
     </swiper-item>
   </block>
 </swiper>
-<view class='swiper-container'>
-    <button bindtap="changeIndicatorDocts">indicator-dots</button>
-    <button bindtap="changeAutoplay">autoplay</button>
-    <slider bindchange="intervalChange" show-value min="500" max="2000"></slider>
-    <slider bindchange="durationChange" show-value min="1000" max="10000"></slider>
-</view>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
