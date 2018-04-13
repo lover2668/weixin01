@@ -1,4 +1,5 @@
-{"navigationBarTitleText":"评价",
+{
+  "navigationBarTitleText": "评价",
   "usingComponents": {
     "component-reward-point": "\/components\/rewardPointModal\/rewardPointModal"
   }
