@@ -1,0 +1,72 @@
+<view class="app" hidden="{{page_hidden}}"><web-view wx-if="{{false}}" src="{{false}}"></web-view><component-share pageQRCodeData="{{pageQRCodeData}}"></component-share>
+<component-backhome backToHomePage="{{backToHomePage}}"></component-backhome>
+<component-reward-point rewardPointObj="{{rewardPointObj}}"></component-reward-point>
+<component-shop-vip shopVipModal="{{shopVipModal}}"></component-shop-vip>
+<template name="zcClassify">
+  <view class="element classify {{ 'classify-mode'+data.customFeature.mode }}" style="{{data.style}}">
+    <scroll-view scroll-x="true" data-color="red" data-index="0" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">
+      <block wx:for="{{data.content}}" wx:key="" wx:for-index="idx" wx:for-item="itemName">
+        <block wx:if="{{idx==data.customFeature.selected}}">
+          <block wx:if="{{data.customFeature.mode==1}}">
+            <view class="classify-item selected" data-event-params="{{itemName.eventParams}}" catchtap="{{itemName.eventHandler}}" style="color:{{data.customFeature.selectedColor}}"><text>{{itemName.text}}</text><i class="underline" style="border-color:{{data.customFeature.selectedColor}}"></i></view>
+          </block>
+          <block wx:else>
+            <view class="classify-item selected" data-event-params="{{itemName.eventParams}}" catchtap="{{itemName.eventHandler}}" style="color:{{data.customFeature.selectedColor}}"><text style="background-color:{{data.customFeature.selectedColor}}">{{itemName.text}}</text></view>
+          </block>
+        </block>
+        <block wx:else>
+          <view class="classify-item" data-event-params="{{itemName.eventParams}}" catchtap="{{itemName.eventHandler}}"><text>{{itemName.text}}</text></view>
+        </block>
+      </block>
+    </scroll-view>
+  </view>
+</template>
+<view class="ele-container">
+  <template is="zcClassify" data="{{data:classify1}}"></template>
+</view><template name="zcFranchiseeList">
+  <view class="element franchisee-list" style="{{data.style}}">
+    <view class="franchisee-title">
+      <view class="franchisee-location" data-compid="franchisee_list2" bindtap="tapFranchiseeLocation"><label class="ico-moon icon-fes_adress"></label> {{ data.location_address || '定位中...' }}</view>附近商家
+    </view>
+    <scroll-view class="scroll-ele"
+                 data-param="{{data.param}}"
+                 data-compid="franchisee_list2"
+                 data-type="franchisee-list"
+                 scroll-y="true"
+                 data-curpage="{{data.curpage}}"
+                 bindscrolltolower="franchiseeScrollFunc">
+      <view class="js-list-container" data-list-index="0">
+        <view class="franchisee-list-item background-ele router js-to-detail {{data.customFeature.mode == 1? 'double-franchisee-list': ''}} {{item.open_status == 0 ? 'not-open':''}} "
+              wx:for="{{data.franchisee_data}}" wx:key="" data-id="{{item.app_id}}" style="{{data.list_style}}" catchtap="turnToFranchiseeDetail">
+          <view class="franchisee-list-goods" style="height:{{data.customFeature.lineHeight}}px">
+          <view class="inner-content">
+            <text class="not-open-tip">休息中</text>
+            <view class="cart-goods-num" wx:if="{{ item.cart_goods_num != 0 }}">{{ item.cart_goods_num }}</view>
+            <image class="list-img" src="{{item.picture}}" style="{{data.img_style}}" mode="aspectFill"></image>
+            <view class="title-container" style="width: {{data.title_width.width}}">
+              <view class="title">{{item.name}}</view>
+              <view class="defaul">距你：{{ item.distance }}</view>
+              <view class="defaul">电话：{{item.phone}}</view>
+            </view>           
+          </view>
+          </view>
+           <view class="discount-coupons">
+             <view class="coupons-cash" wx:if="{{item.coupon_list.best_subtract_value!=''}}">
+              <label>减</label>
+              进店领取{{item.coupon_list.best_subtract_value}}元优惠券
+             </view>
+             <view class="coupons-rebate" wx:if="{{item.coupon_list.best_discount!=''}}">
+             <label>折</label>
+             进店领取{{item.coupon_list.best_discount}}折优惠
+             </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>
+<view class="ele-container">
+  <template is="zcFranchiseeList" data="{{data:franchisee_list2}}"></template>
+</view>
+
+</view>
