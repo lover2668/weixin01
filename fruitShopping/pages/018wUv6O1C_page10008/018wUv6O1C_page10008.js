@@ -1,7 +1,83 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"waimai1":{"type":"waimai","style":"opacity:1;margin-left:auto;","content":[{"text":"\u65f6\u4ee4\u6c34\u679c ","source":"1836154","content":"","parentCompid":"waimai1","style":""},{"text":"\u70ed\u5e26\u6c34\u679c","source":"1836155","content":"","parentCompid":"waimai1","style":""},{"text":"\u897f\u74dc\u871c\u74dc","source":"1836156","content":"","parentCompid":"waimai1","style":""},{"text":"\u82f9\u679c\u68a8\u5b50","source":"1836171","content":"","parentCompid":"waimai1","style":""},{"text":"\u8292\u6a59\u67d1\u67da","source":"1836158","content":"","parentCompid":"waimai1","style":""},{"text":"\u6843\u674e\u674f\u67a3","source":"1836159","content":"","parentCompid":"waimai1","style":""},{"text":"\u83e9\u63d0\u6d46\u679c","source":"1836174","content":"","parentCompid":"waimai1","style":""},{"text":"\u679c\u76d2","source":"1836161","content":"","parentCompid":"waimai1","style":""}],"customFeature":{"form":"takeout","selected":"0","selectedColor":"#333","selectedBackgroundColor":"#fff","lineHeight":60,"imgWidth":60,"imgHeight":60,"leftSpan":"width:164.0625rpx;font-size:30.46875rpx;background-color:#f8f8f8;color:#666;padding:23.4375rpx 11.71875rpx 0;showShopInfo:1;margin-left:auto;","leftSpanWidth":"164.0625rpx"},"animations":[],"page_form":"","compId":"waimai1","imgStyle":"height:;width:;margin-left:auto;","param":"{\"id\":null,\"form\":\"takeout\",\"goods_type\":2,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0}"},"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u5206\u7c7b"}},
+  data: {
+    "waimai1": {
+      "type": "waimai",
+      "style": "opacity:1;margin-left:auto;",
+      "content": [{
+        "text": "\u65f6\u4ee4\u6c34\u679c ",
+        "source": "1836154",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u70ed\u5e26\u6c34\u679c",
+        "source": "1836155",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u897f\u74dc\u871c\u74dc",
+        "source": "1836156",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u82f9\u679c\u68a8\u5b50",
+        "source": "1836171",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u8292\u6a59\u67d1\u67da",
+        "source": "1836158",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u6843\u674e\u674f\u67a3",
+        "source": "1836159",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u83e9\u63d0\u6d46\u679c",
+        "source": "1836174",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }, {
+        "text": "\u679c\u76d2",
+        "source": "1836161",
+        "content": "",
+        "parentCompid": "waimai1",
+        "style": ""
+      }],
+      "customFeature": {
+        "form": "takeout",
+        "selected": "0",
+        "selectedColor": "#333",
+        "selectedBackgroundColor": "#fff",
+        "lineHeight": 60,
+        "imgWidth": 60,
+        "imgHeight": 60,
+        "leftSpan": "width:164.0625rpx;font-size:30.46875rpx;background-color:#f8f8f8;color:#666;padding:23.4375rpx 11.71875rpx 0;showShopInfo:1;margin-left:auto;",
+        "leftSpanWidth": "164.0625rpx"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "waimai1",
+      "imgStyle": "height:;width:;margin-left:auto;",
+      "param": "{\"id\":null,\"form\":\"takeout\",\"goods_type\":2,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0}"
+    },
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u5206\u7c7b"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10008',
     page_form: 'none',

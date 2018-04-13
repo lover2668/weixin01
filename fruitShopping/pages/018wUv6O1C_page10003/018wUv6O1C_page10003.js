@@ -1,7 +1,73 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"picture1":{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:398.4375rpx;width:750rpx;margin-left:auto;margin-right:auto;","content":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_59c22b69aefa4.png","customFeature":{"boxShadow":"('#000','0','0','5')","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5","action":"inner-link","inner-page-link":"groupCenter"},"animations":[],"page_form":"","compId":"picture1","parentCompid":"picture1","itemType":"picture","itemParentType":null,"itemIndex":"picture1","eventParams":"{\"inner_page_link\":\"groupCenter\",\"is_redirect\":0}","eventHandler":"tapInnerLinkHandler"},"goods_list2":{"type":"goods-list","style":"background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:32.8125rpx;height:auto;margin-left:auto;","content":"","customFeature":{"lineBackgroundColor":"rgb(255, 255, 255)","lineBackgroundImage":"","margin":"1","lineHeight":"100","imgWidth":"90","imgHeight":"90","vesselAutoheight":1,"height":"300px","form":"goods","mode":0,"name":"\u5546\u54c1\u5217\u8868","ifUseContact":true,"isIntegral":false,"isHideSales":false,"isHideStock":false,"isShoppingCart":false,"isBuyNow":false,"id":"list-208349527012","source":"1836167"},"animations":[],"page_form":"","compId":"goods_list2","parentCompid":"goods_list2","list_style":"margin-bottom:2.34375rpx;background-color:rgb(255, 255, 255);height:234.375rpx;margin-left:auto;","img_style":"width:210.9375rpx;height:210.9375rpx;margin-left:auto;","title_width":{"width":"515.625rpx"},"param":"{\"id\":\"list-208349527012\",\"form\":\"goods\",\"goods_type\":0,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0,\"is_integral\":0,\"idx_arr\":{\"idx\":\"category\",\"idx_value\":\"1836167\"}}"},"has_tabbar":1,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u9996\u9875"}},
+  data: {
+    "picture1": {
+      "type": "picture",
+      "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:398.4375rpx;width:750rpx;margin-left:auto;margin-right:auto;",
+      "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_59c22b69aefa4.png",
+      "customFeature": {
+        "boxShadow": "('#000','0','0','5')",
+        "boxColor": "#000",
+        "boxX": "0",
+        "boxY": "0",
+        "boxR": "5",
+        "action": "inner-link",
+        "inner-page-link": "groupCenter"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "picture1",
+      "parentCompid": "picture1",
+      "itemType": "picture",
+      "itemParentType": null,
+      "itemIndex": "picture1",
+      "eventParams": "{\"inner_page_link\":\"groupCenter\",\"is_redirect\":0}",
+      "eventHandler": "tapInnerLinkHandler"
+    },
+    "goods_list2": {
+      "type": "goods-list",
+      "style": "background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:32.8125rpx;height:auto;margin-left:auto;",
+      "content": "",
+      "customFeature": {
+        "lineBackgroundColor": "rgb(255, 255, 255)",
+        "lineBackgroundImage": "",
+        "margin": "1",
+        "lineHeight": "100",
+        "imgWidth": "90",
+        "imgHeight": "90",
+        "vesselAutoheight": 1,
+        "height": "300px",
+        "form": "goods",
+        "mode": 0,
+        "name": "\u5546\u54c1\u5217\u8868",
+        "ifUseContact": true,
+        "isIntegral": false,
+        "isHideSales": false,
+        "isHideStock": false,
+        "isShoppingCart": false,
+        "isBuyNow": false,
+        "id": "list-208349527012",
+        "source": "1836167"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "goods_list2",
+      "parentCompid": "goods_list2",
+      "list_style": "margin-bottom:2.34375rpx;background-color:rgb(255, 255, 255);height:234.375rpx;margin-left:auto;",
+      "img_style": "width:210.9375rpx;height:210.9375rpx;margin-left:auto;",
+      "title_width": {
+        "width": "515.625rpx"
+      },
+      "param": "{\"id\":\"list-208349527012\",\"form\":\"goods\",\"goods_type\":0,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0,\"is_integral\":0,\"idx_arr\":{\"idx\":\"category\",\"idx_value\":\"1836167\"}}"
+    },
+    "has_tabbar": 1,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u9996\u9875"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10003',
     page_form: 'none',

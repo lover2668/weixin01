@@ -1,7 +1,14 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u9996\u9875"}},
+  data: {
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u9996\u9875"
+    }
+  },  
     need_login: false,
     page_router: '018wUv6O1C_page10002',
     page_form: 'none',

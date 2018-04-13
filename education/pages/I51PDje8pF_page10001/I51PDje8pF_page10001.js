@@ -1,30 +1,175 @@
-var app      = getApp();
+var app = getApp();
 
 var pageData = {
-  data: {"picture1":{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:304.6875rpx;width:750rpx;margin-left:auto;margin-right:auto;","content":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edcb51a6ee5.png","customFeature":{"boxShadow":"5","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5"},"animations":[],"page_form":"","compId":"picture1","parentCompid":"picture1"},"free_vessel2":{"type":"free-vessel","style":"width:750rpx;height:70.3125rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:7.03125rpx;opacity:1;margin-left:auto;","content":[{"type":"text","style":"background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(155, 222, 86);font-size:35.15625rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:0;margin-top:0;opacity:1;text-align:left;position:absolute;left:309.375rpx;top:11.71875rpx;margin-right:0;","content":"\u4f18\u60e0\u8bfe\u5802","customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":"5","boxStyle":false,"boxX":"0","boxY":"0"},"animations":[],"compId":"data.content[0]","parentCompid":"free_vessel2","markColor":"","mode":0}],"customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":5,"boxStyle":false,"boxX":0,"boxY":0},"animations":[],"page_form":"","compId":"free_vessel2"},"album3":{"style":"background-color:rgb(255, 255, 255);font-size:28.125rpx;margin-top:2.34375rpx;opacity:1;text-align:center;margin-left:auto;","ul_style":"padding-left:23.4375rpx;padding-top:23.4375rpx;margin-left:auto;","html_mode":"sec-mode","li":[{"customFeature":{"action":"goods-trade","goods-id":"0","goods-name":"\u82f1\u8bed\u57f9\u8bad\u73ed"},"li_class":"album-pic refresh","type":"list","target":null,"index":null,"value":null,"action":"goods-trade","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd2fd3e6f2.png","title":"\u82f1\u8bed\u57f9\u8bad\u73ed","li_style":"width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;","img_style":"height:234.375rpx;border-radius:18.75rpx;margin-left:auto;","eventParams":"{\"goods_id\":\"0\",\"goods_type\":null}","eventHandler":"tapGoodsTradeHandler"},{"customFeature":{"action":"goods-trade","goods-id":"0","goods-name":"\u7f8e\u672f\u57f9\u8bad\u73ed"},"li_class":"album-pic refresh","type":"list","target":null,"index":null,"value":null,"action":"goods-trade","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd39828872.png","title":"\u7f8e\u672f\u57f9\u8bad\u73ed","li_style":"width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;","img_style":"height:234.375rpx;border-radius:18.75rpx;margin-left:auto;","eventParams":"{\"goods_id\":\"0\",\"goods_type\":null}","eventHandler":"tapGoodsTradeHandler"},{"customFeature":{"action":"goods-trade"},"li_class":"album-pic refresh","type":"list","target":null,"index":null,"value":null,"action":"goods-trade","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd417be4c1.png","title":"\u94a2\u7434\u57f9\u8bad\u73ed","li_style":"width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;","img_style":"height:234.375rpx;border-radius:18.75rpx;margin-left:auto;","eventParams":"{\"goods_id\":null,\"goods_type\":null}","eventHandler":"tapGoodsTradeHandler"},{"customFeature":{"action":"goods-trade","goods-id":"3813316","goods-name":"\u4e66\u6cd5\u57f9\u8bad\u73ed"},"li_class":"album-pic refresh","type":"list","target":null,"index":null,"value":null,"action":"goods-trade","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd51f7d390.png","title":"\u4e66\u6cd5\u57f9\u8bad\u73ed","li_style":"width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;","img_style":"height:234.375rpx;border-radius:18.75rpx;margin-left:auto;","eventParams":"{\"goods_id\":\"3813316\",\"goods_type\":null}","eventHandler":"tapGoodsTradeHandler"}],"customFeature":{"col":2,"imgHeight":"100px","mode":1,"padding-left":"10","padding-top":"10","picBorderRadius":"8px","row":"2","action":"","imgWidth":155.5},"itemType":"album","itemParentType":null,"itemIndex":"album3","content":""},"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u65b0\u9875\u9762"}},
-    need_login: false,
-    page_router: 'I51PDje8pF_page10001',
-    page_form: 'none',
-      list_compids_params: [],
-      user_center_compids_params: [],
-      goods_compids_params: [],
-  prevPage:0,
-      tostoreComps: [],
-      carouselGroupidsParams: [],
-      relobj_auto: [],
-      bbsCompIds: [],
-      dynamicVesselComps: [],
-      communityComps: [],
-      franchiseeComps: [],
-      cityLocationComps: [],
-      seckillOnLoadCompidParam: [],
-      dynamicClassifyGroupidsParams: [],
-      newClassifyGroupidsParams: [],
-      videoListComps: [],
-      videoProjectComps: [],
-      newsComps: [],
-      popupWindowComps: [],
-      returnToVersionFlag: true,
+  data: {
+    "picture1": {
+      "type": "picture",
+      "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:304.6875rpx;width:750rpx;margin-left:auto;margin-right:auto;",
+      "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edcb51a6ee5.png",
+      "customFeature": {
+        "boxShadow": "5",
+        "boxColor": "#000",
+        "boxX": "0",
+        "boxY": "0",
+        "boxR": "5"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "picture1",
+      "parentCompid": "picture1"
+    },
+    "free_vessel2": {
+      "type": "free-vessel",
+      "style": "width:750rpx;height:70.3125rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:7.03125rpx;opacity:1;margin-left:auto;",
+      "content": [{
+        "type": "text",
+        "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(155, 222, 86);font-size:35.15625rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:0;margin-top:0;opacity:1;text-align:left;position:absolute;left:309.375rpx;top:11.71875rpx;margin-right:0;",
+        "content": "\u4f18\u60e0\u8bfe\u5802",
+        "customFeature": {
+          "boxColor": "rgb(0, 0, 0)",
+          "boxR": "5",
+          "boxStyle": false,
+          "boxX": "0",
+          "boxY": "0"
+        },
+        "animations": [],
+        "compId": "data.content[0]",
+        "parentCompid": "free_vessel2",
+        "markColor": "",
+        "mode": 0
+      }],
+      "customFeature": {
+        "boxColor": "rgb(0, 0, 0)",
+        "boxR": 5,
+        "boxStyle": false,
+        "boxX": 0,
+        "boxY": 0
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "free_vessel2"
+    },
+    "album3": {
+      "style": "background-color:rgb(255, 255, 255);font-size:28.125rpx;margin-top:2.34375rpx;opacity:1;text-align:center;margin-left:auto;",
+      "ul_style": "padding-left:23.4375rpx;padding-top:23.4375rpx;margin-left:auto;",
+      "html_mode": "sec-mode",
+      "li": [{
+        "customFeature": {
+          "action": "goods-trade",
+          "goods-id": "0",
+          "goods-name": "\u82f1\u8bed\u57f9\u8bad\u73ed"
+        },
+        "li_class": "album-pic refresh",
+        "type": "list",
+        "target": null,
+        "index": null,
+        "value": null,
+        "action": "goods-trade",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd2fd3e6f2.png",
+        "title": "\u82f1\u8bed\u57f9\u8bad\u73ed",
+        "li_style": "width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:234.375rpx;border-radius:18.75rpx;margin-left:auto;",
+        "eventParams": "{\"goods_id\":\"0\",\"goods_type\":null}",
+        "eventHandler": "tapGoodsTradeHandler"
+      }, {
+        "customFeature": {
+          "action": "goods-trade",
+          "goods-id": "0",
+          "goods-name": "\u7f8e\u672f\u57f9\u8bad\u73ed"
+        },
+        "li_class": "album-pic refresh",
+        "type": "list",
+        "target": null,
+        "index": null,
+        "value": null,
+        "action": "goods-trade",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd39828872.png",
+        "title": "\u7f8e\u672f\u57f9\u8bad\u73ed",
+        "li_style": "width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:234.375rpx;border-radius:18.75rpx;margin-left:auto;",
+        "eventParams": "{\"goods_id\":\"0\",\"goods_type\":null}",
+        "eventHandler": "tapGoodsTradeHandler"
+      }, {
+        "customFeature": {
+          "action": "goods-trade"
+        },
+        "li_class": "album-pic refresh",
+        "type": "list",
+        "target": null,
+        "index": null,
+        "value": null,
+        "action": "goods-trade",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd417be4c1.png",
+        "title": "\u94a2\u7434\u57f9\u8bad\u73ed",
+        "li_style": "width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:234.375rpx;border-radius:18.75rpx;margin-left:auto;",
+        "eventParams": "{\"goods_id\":null,\"goods_type\":null}",
+        "eventHandler": "tapGoodsTradeHandler"
+      }, {
+        "customFeature": {
+          "action": "goods-trade",
+          "goods-id": "3813316",
+          "goods-name": "\u4e66\u6cd5\u57f9\u8bad\u73ed"
+        },
+        "li_class": "album-pic refresh",
+        "type": "list",
+        "target": null,
+        "index": null,
+        "value": null,
+        "action": "goods-trade",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58edd51f7d390.png",
+        "title": "\u4e66\u6cd5\u57f9\u8bad\u73ed",
+        "li_style": "width:339.84375rpx;margin-right:23.4375rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:234.375rpx;border-radius:18.75rpx;margin-left:auto;",
+        "eventParams": "{\"goods_id\":\"3813316\",\"goods_type\":null}",
+        "eventHandler": "tapGoodsTradeHandler"
+      }],
+      "customFeature": {
+        "col": 2,
+        "imgHeight": "100px",
+        "mode": 1,
+        "padding-left": "10",
+        "padding-top": "10",
+        "picBorderRadius": "8px",
+        "row": "2",
+        "action": "",
+        "imgWidth": 155.5
+      },
+      "itemType": "album",
+      "itemParentType": null,
+      "itemIndex": "album3",
+      "content": ""
+    },
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u65b0\u9875\u9762"
+    }
+  },
+  need_login: false,
+  page_router: 'I51PDje8pF_page10001',
+  page_form: 'none',
+  list_compids_params: [],
+  user_center_compids_params: [],
+  goods_compids_params: [],
+  prevPage: 0,
+  tostoreComps: [],
+  carouselGroupidsParams: [],
+  relobj_auto: [],
+  bbsCompIds: [],
+  dynamicVesselComps: [],
+  communityComps: [],
+  franchiseeComps: [],
+  cityLocationComps: [],
+  seckillOnLoadCompidParam: [],
+  dynamicClassifyGroupidsParams: [],
+  newClassifyGroupidsParams: [],
+  videoListComps: [],
+  videoProjectComps: [],
+  newsComps: [],
+  popupWindowComps: [],
+  returnToVersionFlag: true,
   requesting: false,
   requestNum: 1,
   modelChoose: [],
@@ -35,7 +180,7 @@ var pageData = {
       delete e.statisticsType
       delete e.needStatistics
     }
-    
+
     app.onPageLoad(e);
     app.isNeedRewardModal();
   },
@@ -45,12 +190,17 @@ var pageData = {
   onShareAppMessage: function (e) {
     let that = this;
     return app.onPageShareAppMessage(e, function (addTime) {
-      app.showToast({ title: '转发成功', duration: 500 });
+      app.showToast({
+        title: '转发成功',
+        duration: 500
+      });
       // 转发获取积分
       app.sendRequest({
         hideLoading: true,
         url: '/index.php?r=appShop/getIntegralLog',
-        data: { add_time: addTime },
+        data: {
+          add_time: addTime
+        },
         success: function (res) {
           if (res.status == 0) {
             res.data && that.setData({
@@ -70,12 +220,12 @@ var pageData = {
   },
   reachBottomFuc: [],
   onReachBottom: function () {
-    app.onPageReachBottom( this.reachBottomFuc );
+    app.onPageReachBottom(this.reachBottomFuc);
   },
   onUnload: function () {
     app.onPageUnload();
   },
-  connectWifiHandler:function(e){
+  connectWifiHandler: function (e) {
     app.connectWifiHandler(e)
   },
   tapPrevewPictureHandler: function (e) {
@@ -93,7 +243,7 @@ var pageData = {
   goodsScrollFunc: function (e) {
     app.goodsScrollFunc(e);
   },
-  takeoutStyleScrollFunc: function(e){
+  takeoutStyleScrollFunc: function (e) {
     app.takeoutStyleScrollFunc(e);
   },
   franchiseeScrollFunc: function (e) {
@@ -105,7 +255,7 @@ var pageData = {
   videoScrollFunc: function (e) {
     app.videoScrollFunc(e);
   },
-  carouselVideoClose: function(e) {
+  carouselVideoClose: function (e) {
     app.carouselVideoClose(e);
   },
   changeCount: function (e) {
@@ -261,16 +411,16 @@ var pageData = {
   clickChooseComplete: function (e) {
     app.clickChooseComplete(e);
   },
-  reLocalAddress: function(e){
+  reLocalAddress: function (e) {
     app.reLocalAddress(e);
   },
   tapGoodsTradeHandler: function (e) {
     app.tapGoodsTradeHandler(e);
   },
-  tapVideoHandler: function(e){
+  tapVideoHandler: function (e) {
     app.tapVideoHandler(e);
   },
-  tapVideoPlayHandler: function(e){
+  tapVideoPlayHandler: function (e) {
     app.tapVideoPlayHandler(e);
   },
   tapInnerLinkHandler: function (e) {
@@ -282,10 +432,10 @@ var pageData = {
   tapPhoneCallHandler: function (e) {
     app.tapPhoneCallHandler(e);
   },
-  tapNewClassifyShowSubClassify: function(e){
+  tapNewClassifyShowSubClassify: function (e) {
     app.tapNewClassifyShowSubClassify(e);
   },
-  tapNewClassifyRefreshHandler: function(e){
+  tapNewClassifyRefreshHandler: function (e) {
     app.tapNewClassifyRefreshHandler(e);
   },
   tapRefreshListHandler: function (e) {
@@ -297,7 +447,7 @@ var pageData = {
   tapCommunityHandler: function (e) {
     app.tapCommunityHandler(e);
   },
-  tapPageShareHandler:function(e) {
+  tapPageShareHandler: function (e) {
     app.tapPageShareHandler(e);
   },
   turnToCommunityPage: function (e) {
@@ -339,7 +489,7 @@ var pageData = {
   resetSelectCountPrice: function () {
     app.resetSelectCountPrice();
   },
-  inputBuyCount: function(e){
+  inputBuyCount: function (e) {
     app.inputBuyCount(e)
   },
   clickGoodsMinusButton: function (e) {
@@ -372,15 +522,14 @@ var pageData = {
   getCartList: function () {
     app.getTostoreCartList();
   },
-  stopPropagation: function () {
-  },
-  turnToSearchPage:function (e) {
+  stopPropagation: function () { },
+  turnToSearchPage: function (e) {
     app.turnToSearchPage(e);
   },
   previewImage: function (e) {
     var dataset = e.currentTarget.dataset;
     app.previewImage({
-      current : dataset.src,
+      current: dataset.src,
       urls: dataset.previewImgarr,
     });
   },
@@ -402,37 +551,37 @@ var pageData = {
   tapToLuckyWheel: function (e) {
     app.tapToLuckyWheel(e);
   },
-  keywordList:{},
+  keywordList: {},
   bindSearchTextChange: function (e) {
     this.keywordList[e.currentTarget.dataset.compid] = e.detail.value;
   },
   // 文字组件跳到地图
-  textToMap: function(e) {
+  textToMap: function (e) {
     app.textToMap(e);
   },
-  tapDynamicClassifyFunc: function(e){
+  tapDynamicClassifyFunc: function (e) {
     app.tapDynamicClassifyFunc(e);
   },
   // 跳转到视频详情
-  turnToVideoDetail : function(e) {
+  turnToVideoDetail: function (e) {
     app.turnToVideoDetail(e);
   },
   // 单个视频组件播放视频
-  startPlayVideo : function(e) {
+  startPlayVideo: function (e) {
     app.startPlayVideo(e);
   },
   // 视频播放报错
-  videoError: function(e) {
+  videoError: function (e) {
     app.showModal({
       content: e.detail.errMsg
     });
   },
   // 视频项目播放事件
-  videoProjectPlay: function(e){
+  videoProjectPlay: function (e) {
     app.videoProjectPlay(e);
   },
   // 视频项目暂停事件
-  videoProjectPause: function(e) {
+  videoProjectPause: function (e) {
     app.videoProjectPause(e);
   },
   // 跳转到资讯详情
@@ -443,16 +592,16 @@ var pageData = {
   getNewsCateList: function (e) {
     app.getNewsCateList(e);
   },
-  showBbsReplyDialog: function(e){
+  showBbsReplyDialog: function (e) {
     app.showBbsReplyDialog(e);
   },
-  hideBbsReplyDialog: function(e){
+  hideBbsReplyDialog: function (e) {
     app.hideBbsReplyDialog(e);
   },
-  popupWindowControlHandler: function(e){
+  popupWindowControlHandler: function (e) {
     app.popupWindowControlHandler(e);
   },
-  tapMaskClosePopupWindow: function(e){
+  tapMaskClosePopupWindow: function (e) {
     app.tapMaskClosePopupWindow(e);
   }
 };

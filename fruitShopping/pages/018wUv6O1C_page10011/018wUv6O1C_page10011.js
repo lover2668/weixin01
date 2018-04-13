@@ -1,7 +1,86 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"classify1":{"type":"classify","style":"font-size:30.46875rpx;height:117.1875rpx;line-height:117.1875rpx;opacity:1;background-color:rgb(72, 206, 82);color:rgb(201, 234, 170);margin-top:0;margin-left:auto;","content":[{"customFeature":{"index_value":"","action":"inner-link","page-link":"018wUv6O1C_page10011"},"text":"\u5546\u5bb6\u5217\u8868","content":"","parentCompid":"classify1","style":"","itemType":null,"itemParentType":"classify","itemIndex":0,"eventParams":"{\"inner_page_link\":\"018wUv6O1C_page10011\",\"is_redirect\":1}","eventHandler":"tapInnerLinkHandler"},{"customFeature":{"index_value":"","action":"inner-link","page-link":"018wUv6O1C_page10014"},"text":"\u7533\u8bf7\u5165\u9a7b","content":"","parentCompid":"classify1","style":"","itemType":null,"itemParentType":"classify","itemIndex":1,"eventParams":"{\"inner_page_link\":\"018wUv6O1C_page10014\",\"is_redirect\":1}","eventHandler":"tapInnerLinkHandler"}],"customFeature":{"mode":"1","selected":"0","selectedColor":"rgb(255, 255, 255)"},"animations":[],"page_form":"","compId":"classify1"},"franchisee_list2":{"type":"franchisee-list","style":"background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:35.15625rpx;height:auto;margin-left:auto;","content":"","customFeature":{"lineBackgroundColor":"rgb(255, 255, 255)","lineBackgroundImage":"","margin":1,"lineHeight":90,"imgWidth":70,"imgHeight":70,"vesselAutoheight":1,"height":"300px","form":"app_shop","mode":0,"name":"\u5546\u5bb6\u5217\u8868","id":"list-183224981310"},"animations":[],"page_form":"","compId":"franchisee_list2","parentCompid":"franchisee_list2","list_style":"margin-bottom:2.34375rpx;background-color:rgb(255, 255, 255);height:210.9375rpx;margin-left:auto;","img_style":"width:164.0625rpx;height:164.0625rpx;margin-left:auto;","title_width":{"width":"562.5rpx"},"param":"{\"id\":\"list-183224981310\",\"form\":\"app_shop\",\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"sort_key\":\"distance\",\"sort_direction\":1}"},"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u591a\u5546\u5bb6"}},
+  data: {
+    "classify1": {
+      "type": "classify",
+      "style": "font-size:30.46875rpx;height:117.1875rpx;line-height:117.1875rpx;opacity:1;background-color:rgb(72, 206, 82);color:rgb(201, 234, 170);margin-top:0;margin-left:auto;",
+      "content": [{
+        "customFeature": {
+          "index_value": "",
+          "action": "inner-link",
+          "page-link": "018wUv6O1C_page10011"
+        },
+        "text": "\u5546\u5bb6\u5217\u8868",
+        "content": "",
+        "parentCompid": "classify1",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "classify",
+        "itemIndex": 0,
+        "eventParams": "{\"inner_page_link\":\"018wUv6O1C_page10011\",\"is_redirect\":1}",
+        "eventHandler": "tapInnerLinkHandler"
+      }, {
+        "customFeature": {
+          "index_value": "",
+          "action": "inner-link",
+          "page-link": "018wUv6O1C_page10014"
+        },
+        "text": "\u7533\u8bf7\u5165\u9a7b",
+        "content": "",
+        "parentCompid": "classify1",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "classify",
+        "itemIndex": 1,
+        "eventParams": "{\"inner_page_link\":\"018wUv6O1C_page10014\",\"is_redirect\":1}",
+        "eventHandler": "tapInnerLinkHandler"
+      }],
+      "customFeature": {
+        "mode": "1",
+        "selected": "0",
+        "selectedColor": "rgb(255, 255, 255)"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "classify1"
+    },
+    "franchisee_list2": {
+      "type": "franchisee-list",
+      "style": "background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:35.15625rpx;height:auto;margin-left:auto;",
+      "content": "",
+      "customFeature": {
+        "lineBackgroundColor": "rgb(255, 255, 255)",
+        "lineBackgroundImage": "",
+        "margin": 1,
+        "lineHeight": 90,
+        "imgWidth": 70,
+        "imgHeight": 70,
+        "vesselAutoheight": 1,
+        "height": "300px",
+        "form": "app_shop",
+        "mode": 0,
+        "name": "\u5546\u5bb6\u5217\u8868",
+        "id": "list-183224981310"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "franchisee_list2",
+      "parentCompid": "franchisee_list2",
+      "list_style": "margin-bottom:2.34375rpx;background-color:rgb(255, 255, 255);height:210.9375rpx;margin-left:auto;",
+      "img_style": "width:164.0625rpx;height:164.0625rpx;margin-left:auto;",
+      "title_width": {
+        "width": "562.5rpx"
+      },
+      "param": "{\"id\":\"list-183224981310\",\"form\":\"app_shop\",\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"sort_key\":\"distance\",\"sort_direction\":1}"
+    },
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u591a\u5546\u5bb6"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10011',
     page_form: 'none',

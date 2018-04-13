@@ -1,30 +1,147 @@
-var app      = getApp();
+var app = getApp();
 
 var pageData = {
-  data: {"picture1":{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:351.5625rpx;width:750rpx;margin-left:auto;margin-right:auto;","content":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee472f703da.png","customFeature":{"boxShadow":"5","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5"},"animations":[],"page_form":"","compId":"picture1","parentCompid":"picture1"},"text2":{"type":"text","style":"background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(155, 222, 86);font-size:37.5rpx;height:44.53125rpx;width:150rpx;line-height:70.3125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;margin-right:auto;","content":"\u9605\u8bfb\u5929\u5730","customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":"5","boxStyle":false,"boxX":"0","boxY":"0"},"animations":[],"page_form":"","compId":"text2","parentCompid":"text2","markColor":"","mode":0},"breakline3":{"type":"breakline","style":"border-width:4.6875rpx;border-bottom-style:solid;margin-left:0;margin-right;:auto;width:750rpx;border-bottom-color:rgb(243, 243, 243);","content":"<div><\/div>","customFeature":[],"animations":[],"page_form":"","compId":"breakline3","parentCompid":"breakline3"},"list4":{"type":"list","style":"background-color:rgb(255, 255, 255);color:rgb(34, 34, 34);font-size:37.5rpx;margin-top:11.71875rpx;opacity:1;text-align:left;margin-left:auto;","content":[{"customFeature":{"action":"inner-link","page-link":"I51PDje8pF_page10011"},"title":"\u53f2\u8bb0","secTitle":"\u300a\u53f2\u8bb0\u300b\u662f\u897f\u6c49\u8457\u540d\u53f2\u5b66\u5bb6\u53f8\u9a6c\u8fc1\u64b0\u5199\u7684\u4e00\u90e8\u7eaa\u4f20\u4f53","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee4bdfefcc0.png","content":"","listStyle":"margin-bottom:35.15625rpx;background-color:rgb(255, 255, 255);height:147.65625rpx;margin-left:auto;","imgStyle":"width:164.0625rpx;height:164.0625rpx;margin-left:auto;","secTitleStyle":"color:rgb(102, 102, 102);font-size:28.125rpx;text-align:left;margin-left:auto;","titleWidth":"width:562.5rpx;margin-left:auto;","eventParams":"{\"inner_page_link\":\"I51PDje8pF_page10011\",\"is_redirect\":0}","eventHandler":"tapInnerLinkHandler","parentCompid":"list4","style":"","itemType":null,"itemParentType":"list","itemIndex":0},{"customFeature":{"action":"inner-link","page-link":"I51PDje8pF_page10010"},"title":"\u4e09\u56fd\u6f14\u4e49","secTitle":"\u300a\u4e09\u56fd\u6f14\u4e49\u300b\u5168\u540d\u300a\u4e09\u56fd\u6f14\u4e49\u5fd7\u901a\u4fd7\u6f14\u4e49\u300b","pic":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee4d2220ded.png","content":"","listStyle":"margin-bottom:35.15625rpx;background-color:rgb(255, 255, 255);height:147.65625rpx;margin-left:auto;","imgStyle":"width:164.0625rpx;height:164.0625rpx;margin-left:auto;","secTitleStyle":"color:rgb(102, 102, 102);font-size:28.125rpx;text-align:left;margin-left:auto;","titleWidth":"width:562.5rpx;margin-left:auto;","eventParams":"{\"inner_page_link\":\"I51PDje8pF_page10010\",\"is_redirect\":0}","eventHandler":"tapInnerLinkHandler","parentCompid":"list4","style":"","itemType":null,"itemParentType":"list","itemIndex":1}],"customFeature":{"imgHeight":"70","imgWidth":"70","lineBackgroundColor":"rgb(255, 255, 255)","lineBackgroundImage":"","lineHeight":"63","margin":"15","mode":0,"secColor":"rgb(102, 102, 102)","secFontSize":"12px","secFontStyle":"","secFontWeight":"","secTextAlign":"left","secTextDecoration":""},"animations":[],"page_form":"","compId":"list4","itemType":"list","itemParentType":null,"itemIndex":"list4"},"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u9605\u8bfb"}},
-    need_login: false,
-    page_router: 'I51PDje8pF_page10002',
-    page_form: 'none',
-      list_compids_params: [],
-      user_center_compids_params: [],
-      goods_compids_params: [],
-  prevPage:0,
-      tostoreComps: [],
-      carouselGroupidsParams: [],
-      relobj_auto: [],
-      bbsCompIds: [],
-      dynamicVesselComps: [],
-      communityComps: [],
-      franchiseeComps: [],
-      cityLocationComps: [],
-      seckillOnLoadCompidParam: [],
-      dynamicClassifyGroupidsParams: [],
-      newClassifyGroupidsParams: [],
-      videoListComps: [],
-      videoProjectComps: [],
-      newsComps: [],
-      popupWindowComps: [],
-      returnToVersionFlag: true,
+  data: {
+    "picture1": {
+      "type": "picture",
+      "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:351.5625rpx;width:750rpx;margin-left:auto;margin-right:auto;",
+      "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee472f703da.png",
+      "customFeature": {
+        "boxShadow": "5",
+        "boxColor": "#000",
+        "boxX": "0",
+        "boxY": "0",
+        "boxR": "5"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "picture1",
+      "parentCompid": "picture1"
+    },
+    "text2": {
+      "type": "text",
+      "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(155, 222, 86);font-size:37.5rpx;height:44.53125rpx;width:150rpx;line-height:70.3125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;margin-right:auto;",
+      "content": "\u9605\u8bfb\u5929\u5730",
+      "customFeature": {
+        "boxColor": "rgb(0, 0, 0)",
+        "boxR": "5",
+        "boxStyle": false,
+        "boxX": "0",
+        "boxY": "0"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "text2",
+      "parentCompid": "text2",
+      "markColor": "",
+      "mode": 0
+    },
+    "breakline3": {
+      "type": "breakline",
+      "style": "border-width:4.6875rpx;border-bottom-style:solid;margin-left:0;margin-right;:auto;width:750rpx;border-bottom-color:rgb(243, 243, 243);",
+      "content": "<div><\/div>",
+      "customFeature": [],
+      "animations": [],
+      "page_form": "",
+      "compId": "breakline3",
+      "parentCompid": "breakline3"
+    },
+    "list4": {
+      "type": "list",
+      "style": "background-color:rgb(255, 255, 255);color:rgb(34, 34, 34);font-size:37.5rpx;margin-top:11.71875rpx;opacity:1;text-align:left;margin-left:auto;",
+      "content": [{
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "I51PDje8pF_page10011"
+        },
+        "title": "\u53f2\u8bb0",
+        "secTitle": "\u300a\u53f2\u8bb0\u300b\u662f\u897f\u6c49\u8457\u540d\u53f2\u5b66\u5bb6\u53f8\u9a6c\u8fc1\u64b0\u5199\u7684\u4e00\u90e8\u7eaa\u4f20\u4f53",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee4bdfefcc0.png",
+        "content": "",
+        "listStyle": "margin-bottom:35.15625rpx;background-color:rgb(255, 255, 255);height:147.65625rpx;margin-left:auto;",
+        "imgStyle": "width:164.0625rpx;height:164.0625rpx;margin-left:auto;",
+        "secTitleStyle": "color:rgb(102, 102, 102);font-size:28.125rpx;text-align:left;margin-left:auto;",
+        "titleWidth": "width:562.5rpx;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"I51PDje8pF_page10011\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler",
+        "parentCompid": "list4",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "list",
+        "itemIndex": 0
+      }, {
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "I51PDje8pF_page10010"
+        },
+        "title": "\u4e09\u56fd\u6f14\u4e49",
+        "secTitle": "\u300a\u4e09\u56fd\u6f14\u4e49\u300b\u5168\u540d\u300a\u4e09\u56fd\u6f14\u4e49\u5fd7\u901a\u4fd7\u6f14\u4e49\u300b",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ee4d2220ded.png",
+        "content": "",
+        "listStyle": "margin-bottom:35.15625rpx;background-color:rgb(255, 255, 255);height:147.65625rpx;margin-left:auto;",
+        "imgStyle": "width:164.0625rpx;height:164.0625rpx;margin-left:auto;",
+        "secTitleStyle": "color:rgb(102, 102, 102);font-size:28.125rpx;text-align:left;margin-left:auto;",
+        "titleWidth": "width:562.5rpx;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"I51PDje8pF_page10010\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler",
+        "parentCompid": "list4",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "list",
+        "itemIndex": 1
+      }],
+      "customFeature": {
+        "imgHeight": "70",
+        "imgWidth": "70",
+        "lineBackgroundColor": "rgb(255, 255, 255)",
+        "lineBackgroundImage": "",
+        "lineHeight": "63",
+        "margin": "15",
+        "mode": 0,
+        "secColor": "rgb(102, 102, 102)",
+        "secFontSize": "12px",
+        "secFontStyle": "",
+        "secFontWeight": "",
+        "secTextAlign": "left",
+        "secTextDecoration": ""
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "list4",
+      "itemType": "list",
+      "itemParentType": null,
+      "itemIndex": "list4"
+    },
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u9605\u8bfb"
+    }
+  },
+  need_login: false,
+  page_router: 'I51PDje8pF_page10002',
+  page_form: 'none',
+  list_compids_params: [],
+  user_center_compids_params: [],
+  goods_compids_params: [],
+  prevPage: 0,
+  tostoreComps: [],
+  carouselGroupidsParams: [],
+  relobj_auto: [],
+  bbsCompIds: [],
+  dynamicVesselComps: [],
+  communityComps: [],
+  franchiseeComps: [],
+  cityLocationComps: [],
+  seckillOnLoadCompidParam: [],
+  dynamicClassifyGroupidsParams: [],
+  newClassifyGroupidsParams: [],
+  videoListComps: [],
+  videoProjectComps: [],
+  newsComps: [],
+  popupWindowComps: [],
+  returnToVersionFlag: true,
   requesting: false,
   requestNum: 1,
   modelChoose: [],
@@ -35,7 +152,7 @@ var pageData = {
       delete e.statisticsType
       delete e.needStatistics
     }
-    
+
     app.onPageLoad(e);
     app.isNeedRewardModal();
   },
@@ -45,12 +162,17 @@ var pageData = {
   onShareAppMessage: function (e) {
     let that = this;
     return app.onPageShareAppMessage(e, function (addTime) {
-      app.showToast({ title: '转发成功', duration: 500 });
+      app.showToast({
+        title: '转发成功',
+        duration: 500
+      });
       // 转发获取积分
       app.sendRequest({
         hideLoading: true,
         url: '/index.php?r=appShop/getIntegralLog',
-        data: { add_time: addTime },
+        data: {
+          add_time: addTime
+        },
         success: function (res) {
           if (res.status == 0) {
             res.data && that.setData({
@@ -70,12 +192,12 @@ var pageData = {
   },
   reachBottomFuc: [],
   onReachBottom: function () {
-    app.onPageReachBottom( this.reachBottomFuc );
+    app.onPageReachBottom(this.reachBottomFuc);
   },
   onUnload: function () {
     app.onPageUnload();
   },
-  connectWifiHandler:function(e){
+  connectWifiHandler: function (e) {
     app.connectWifiHandler(e)
   },
   tapPrevewPictureHandler: function (e) {
@@ -93,7 +215,7 @@ var pageData = {
   goodsScrollFunc: function (e) {
     app.goodsScrollFunc(e);
   },
-  takeoutStyleScrollFunc: function(e){
+  takeoutStyleScrollFunc: function (e) {
     app.takeoutStyleScrollFunc(e);
   },
   franchiseeScrollFunc: function (e) {
@@ -105,7 +227,7 @@ var pageData = {
   videoScrollFunc: function (e) {
     app.videoScrollFunc(e);
   },
-  carouselVideoClose: function(e) {
+  carouselVideoClose: function (e) {
     app.carouselVideoClose(e);
   },
   changeCount: function (e) {
@@ -261,16 +383,16 @@ var pageData = {
   clickChooseComplete: function (e) {
     app.clickChooseComplete(e);
   },
-  reLocalAddress: function(e){
+  reLocalAddress: function (e) {
     app.reLocalAddress(e);
   },
   tapGoodsTradeHandler: function (e) {
     app.tapGoodsTradeHandler(e);
   },
-  tapVideoHandler: function(e){
+  tapVideoHandler: function (e) {
     app.tapVideoHandler(e);
   },
-  tapVideoPlayHandler: function(e){
+  tapVideoPlayHandler: function (e) {
     app.tapVideoPlayHandler(e);
   },
   tapInnerLinkHandler: function (e) {
@@ -282,10 +404,10 @@ var pageData = {
   tapPhoneCallHandler: function (e) {
     app.tapPhoneCallHandler(e);
   },
-  tapNewClassifyShowSubClassify: function(e){
+  tapNewClassifyShowSubClassify: function (e) {
     app.tapNewClassifyShowSubClassify(e);
   },
-  tapNewClassifyRefreshHandler: function(e){
+  tapNewClassifyRefreshHandler: function (e) {
     app.tapNewClassifyRefreshHandler(e);
   },
   tapRefreshListHandler: function (e) {
@@ -297,7 +419,7 @@ var pageData = {
   tapCommunityHandler: function (e) {
     app.tapCommunityHandler(e);
   },
-  tapPageShareHandler:function(e) {
+  tapPageShareHandler: function (e) {
     app.tapPageShareHandler(e);
   },
   turnToCommunityPage: function (e) {
@@ -339,7 +461,7 @@ var pageData = {
   resetSelectCountPrice: function () {
     app.resetSelectCountPrice();
   },
-  inputBuyCount: function(e){
+  inputBuyCount: function (e) {
     app.inputBuyCount(e)
   },
   clickGoodsMinusButton: function (e) {
@@ -372,15 +494,14 @@ var pageData = {
   getCartList: function () {
     app.getTostoreCartList();
   },
-  stopPropagation: function () {
-  },
-  turnToSearchPage:function (e) {
+  stopPropagation: function () { },
+  turnToSearchPage: function (e) {
     app.turnToSearchPage(e);
   },
   previewImage: function (e) {
     var dataset = e.currentTarget.dataset;
     app.previewImage({
-      current : dataset.src,
+      current: dataset.src,
       urls: dataset.previewImgarr,
     });
   },
@@ -402,37 +523,37 @@ var pageData = {
   tapToLuckyWheel: function (e) {
     app.tapToLuckyWheel(e);
   },
-  keywordList:{},
+  keywordList: {},
   bindSearchTextChange: function (e) {
     this.keywordList[e.currentTarget.dataset.compid] = e.detail.value;
   },
   // 文字组件跳到地图
-  textToMap: function(e) {
+  textToMap: function (e) {
     app.textToMap(e);
   },
-  tapDynamicClassifyFunc: function(e){
+  tapDynamicClassifyFunc: function (e) {
     app.tapDynamicClassifyFunc(e);
   },
   // 跳转到视频详情
-  turnToVideoDetail : function(e) {
+  turnToVideoDetail: function (e) {
     app.turnToVideoDetail(e);
   },
   // 单个视频组件播放视频
-  startPlayVideo : function(e) {
+  startPlayVideo: function (e) {
     app.startPlayVideo(e);
   },
   // 视频播放报错
-  videoError: function(e) {
+  videoError: function (e) {
     app.showModal({
       content: e.detail.errMsg
     });
   },
   // 视频项目播放事件
-  videoProjectPlay: function(e){
+  videoProjectPlay: function (e) {
     app.videoProjectPlay(e);
   },
   // 视频项目暂停事件
-  videoProjectPause: function(e) {
+  videoProjectPause: function (e) {
     app.videoProjectPause(e);
   },
   // 跳转到资讯详情
@@ -443,16 +564,16 @@ var pageData = {
   getNewsCateList: function (e) {
     app.getNewsCateList(e);
   },
-  showBbsReplyDialog: function(e){
+  showBbsReplyDialog: function (e) {
     app.showBbsReplyDialog(e);
   },
-  hideBbsReplyDialog: function(e){
+  hideBbsReplyDialog: function (e) {
     app.hideBbsReplyDialog(e);
   },
-  popupWindowControlHandler: function(e){
+  popupWindowControlHandler: function (e) {
     app.popupWindowControlHandler(e);
   },
-  tapMaskClosePopupWindow: function(e){
+  tapMaskClosePopupWindow: function (e) {
     app.tapMaskClosePopupWindow(e);
   }
 };

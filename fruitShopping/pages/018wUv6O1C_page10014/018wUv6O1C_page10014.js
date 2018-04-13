@@ -1,7 +1,188 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"classify1":{"type":"classify","style":"font-size:30.46875rpx;height:117.1875rpx;line-height:117.1875rpx;opacity:1;background-color:rgb(72, 206, 82);color:rgb(201, 234, 170);margin-top:0;margin-left:auto;","content":[{"customFeature":{"index_value":"","action":"inner-link","page-link":"018wUv6O1C_page10011"},"text":"\u5546\u5bb6\u5217\u8868","content":"","parentCompid":"classify1","style":"","itemType":null,"itemParentType":"classify","itemIndex":0,"eventParams":"{\"inner_page_link\":\"018wUv6O1C_page10011\",\"is_redirect\":1}","eventHandler":"tapInnerLinkHandler"},{"customFeature":{"index_value":"","action":"inner-link","page-link":"018wUv6O1C_page10014"},"text":"\u7533\u8bf7\u5165\u9a7b","content":"","parentCompid":"classify1","style":"","itemType":null,"itemParentType":"classify","itemIndex":1,"eventParams":"{\"inner_page_link\":\"018wUv6O1C_page10014\",\"is_redirect\":1}","eventHandler":"tapInnerLinkHandler"}],"customFeature":{"mode":"1","selected":"1","selectedColor":"rgb(255, 255, 255)"},"animations":[],"page_form":"","compId":"classify1"},"form_vessel2":{"type":"form-vessel","style":"background-color:rgba(0, 0, 0, 0);opacity:1;margin-left:auto;","content":[{"type":"input-ele","style":"margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;","content":"","customFeature":{"placeholder":"\u5e97\u94fa\u540d\u79f0","segment":"mc","ifMust":true},"animations":[],"compId":"data.content[0]","formCompid":"form_vessel2","segment_required":1,"parentCompid":"form_vessel2"},{"type":"input-ele","style":"margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;","content":"","customFeature":{"placeholder":"\u5e97\u94fa\u5730\u5740","segment":"dz","ifMust":true},"animations":[],"compId":"data.content[1]","formCompid":"form_vessel2","segment_required":1,"parentCompid":"form_vessel2"},{"type":"input-ele","style":"margin-top:11.71875rpx;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;","content":"","customFeature":{"placeholder":"\u8054\u7cfb\u4eba","segment":"lxr","ifMust":true},"animations":[],"compId":"data.content[2]","formCompid":"form_vessel2","segment_required":1,"parentCompid":"form_vessel2"},{"type":"input-ele","style":"margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;","content":"","customFeature":{"placeholder":"\u8bf7\u8f93\u5165\u63d0\u793a","segment":"dh","ifMust":true},"animations":[],"compId":"data.content[3]","formCompid":"form_vessel2","segment_required":1,"parentCompid":"form_vessel2"},{"type":"upload-img","style":"margin-top:35.15625rpx;margin-bottom:35.15625rpx;text-align:center;padding:35.15625rpx 0;border-top:2.34375rpx solid #c6c6c6;border-bottom:2.34375rpx solid #c6c6c6;margin-left:auto;","content":"","customFeature":{"segment":"logo","ifMust":true},"animations":[],"compId":"data.content[4]","formCompid":"form_vessel2","segment_required":1,"parentCompid":"form_vessel2"},{"type":"form-button","style":"background-color:rgb(9, 187, 7);border-color:rgb(34, 34, 34);border-style:none;color:rgb(255, 255, 255);font-size:32.8125rpx;height:82.03125rpx;line-height:82.03125rpx;margin-left:auto;margin-right:auto;opacity:1;text-align:center;width:656.25rpx;","content":"\u7533\u8bf7\u5165\u9a7b","customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":"5px","boxStyle":false,"boxX":"0","boxY":"0","segment":"submit-btn"},"animations":[],"compId":"data.content[5]","parentCompid":"form_vessel2"}],"customFeature":{"form":"sq","link":"-1","source":"none"},"animations":[],"page_form":"","compId":"form_vessel2","form":"sq","field_info":{"region_id":{"field":"region_id","required":"0","title":"\u57ce\u5e02"},"mc":{"field":"mc","required":"1","title":"\u5e97\u94fa\u540d\u79f0"},"dz":{"field":"dz","required":"1","title":"\u5e97\u94fa\u5730\u5740"},"lxr":{"field":"lxr","required":"1","title":"\u8054\u7cfb\u4eba"},"dh":{"field":"dh","required":"1","title":"\u7535\u8bdd"},"logo":{"field":"logo","required":"1","title":"\u5e97\u94falogo"}},"formCompid":"form_vessel2"},"has_tabbar":0,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u5165\u9a7b\u7533\u8bf7"}},
+  data: {
+    "classify1": {
+      "type": "classify",
+      "style": "font-size:30.46875rpx;height:117.1875rpx;line-height:117.1875rpx;opacity:1;background-color:rgb(72, 206, 82);color:rgb(201, 234, 170);margin-top:0;margin-left:auto;",
+      "content": [{
+        "customFeature": {
+          "index_value": "",
+          "action": "inner-link",
+          "page-link": "018wUv6O1C_page10011"
+        },
+        "text": "\u5546\u5bb6\u5217\u8868",
+        "content": "",
+        "parentCompid": "classify1",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "classify",
+        "itemIndex": 0,
+        "eventParams": "{\"inner_page_link\":\"018wUv6O1C_page10011\",\"is_redirect\":1}",
+        "eventHandler": "tapInnerLinkHandler"
+      }, {
+        "customFeature": {
+          "index_value": "",
+          "action": "inner-link",
+          "page-link": "018wUv6O1C_page10014"
+        },
+        "text": "\u7533\u8bf7\u5165\u9a7b",
+        "content": "",
+        "parentCompid": "classify1",
+        "style": "",
+        "itemType": null,
+        "itemParentType": "classify",
+        "itemIndex": 1,
+        "eventParams": "{\"inner_page_link\":\"018wUv6O1C_page10014\",\"is_redirect\":1}",
+        "eventHandler": "tapInnerLinkHandler"
+      }],
+      "customFeature": {
+        "mode": "1",
+        "selected": "1",
+        "selectedColor": "rgb(255, 255, 255)"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "classify1"
+    },
+    "form_vessel2": {
+      "type": "form-vessel",
+      "style": "background-color:rgba(0, 0, 0, 0);opacity:1;margin-left:auto;",
+      "content": [{
+        "type": "input-ele",
+        "style": "margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;",
+        "content": "",
+        "customFeature": {
+          "placeholder": "\u5e97\u94fa\u540d\u79f0",
+          "segment": "mc",
+          "ifMust": true
+        },
+        "animations": [],
+        "compId": "data.content[0]",
+        "formCompid": "form_vessel2",
+        "segment_required": 1,
+        "parentCompid": "form_vessel2"
+      }, {
+        "type": "input-ele",
+        "style": "margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;",
+        "content": "",
+        "customFeature": {
+          "placeholder": "\u5e97\u94fa\u5730\u5740",
+          "segment": "dz",
+          "ifMust": true
+        },
+        "animations": [],
+        "compId": "data.content[1]",
+        "formCompid": "form_vessel2",
+        "segment_required": 1,
+        "parentCompid": "form_vessel2"
+      }, {
+        "type": "input-ele",
+        "style": "margin-top:11.71875rpx;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;",
+        "content": "",
+        "customFeature": {
+          "placeholder": "\u8054\u7cfb\u4eba",
+          "segment": "lxr",
+          "ifMust": true
+        },
+        "animations": [],
+        "compId": "data.content[2]",
+        "formCompid": "form_vessel2",
+        "segment_required": 1,
+        "parentCompid": "form_vessel2"
+      }, {
+        "type": "input-ele",
+        "style": "margin-top:0;margin-left:auto;width:656.25rpx;height:82.03125rpx;margin-right:auto;opacity:1;border-radius:9.375rpx;",
+        "content": "",
+        "customFeature": {
+          "placeholder": "\u8bf7\u8f93\u5165\u63d0\u793a",
+          "segment": "dh",
+          "ifMust": true
+        },
+        "animations": [],
+        "compId": "data.content[3]",
+        "formCompid": "form_vessel2",
+        "segment_required": 1,
+        "parentCompid": "form_vessel2"
+      }, {
+        "type": "upload-img",
+        "style": "margin-top:35.15625rpx;margin-bottom:35.15625rpx;text-align:center;padding:35.15625rpx 0;border-top:2.34375rpx solid #c6c6c6;border-bottom:2.34375rpx solid #c6c6c6;margin-left:auto;",
+        "content": "",
+        "customFeature": {
+          "segment": "logo",
+          "ifMust": true
+        },
+        "animations": [],
+        "compId": "data.content[4]",
+        "formCompid": "form_vessel2",
+        "segment_required": 1,
+        "parentCompid": "form_vessel2"
+      }, {
+        "type": "form-button",
+        "style": "background-color:rgb(9, 187, 7);border-color:rgb(34, 34, 34);border-style:none;color:rgb(255, 255, 255);font-size:32.8125rpx;height:82.03125rpx;line-height:82.03125rpx;margin-left:auto;margin-right:auto;opacity:1;text-align:center;width:656.25rpx;",
+        "content": "\u7533\u8bf7\u5165\u9a7b",
+        "customFeature": {
+          "boxColor": "rgb(0, 0, 0)",
+          "boxR": "5px",
+          "boxStyle": false,
+          "boxX": "0",
+          "boxY": "0",
+          "segment": "submit-btn"
+        },
+        "animations": [],
+        "compId": "data.content[5]",
+        "parentCompid": "form_vessel2"
+      }],
+      "customFeature": {
+        "form": "sq",
+        "link": "-1",
+        "source": "none"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "form_vessel2",
+      "form": "sq",
+      "field_info": {
+        "region_id": {
+          "field": "region_id",
+          "required": "0",
+          "title": "\u57ce\u5e02"
+        },
+        "mc": {
+          "field": "mc",
+          "required": "1",
+          "title": "\u5e97\u94fa\u540d\u79f0"
+        },
+        "dz": {
+          "field": "dz",
+          "required": "1",
+          "title": "\u5e97\u94fa\u5730\u5740"
+        },
+        "lxr": {
+          "field": "lxr",
+          "required": "1",
+          "title": "\u8054\u7cfb\u4eba"
+        },
+        "dh": {
+          "field": "dh",
+          "required": "1",
+          "title": "\u7535\u8bdd"
+        },
+        "logo": {
+          "field": "logo",
+          "required": "1",
+          "title": "\u5e97\u94falogo"
+        }
+      },
+      "formCompid": "form_vessel2"
+    },
+    "has_tabbar": 0,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u5165\u9a7b\u7533\u8bf7"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10014',
     page_form: 'none',

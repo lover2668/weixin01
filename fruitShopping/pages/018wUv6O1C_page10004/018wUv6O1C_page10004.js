@@ -1,7 +1,78 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"user_center1":{"type":"user-center","style":"opacity:1;color:rgb(255, 255, 255);margin-top:0;font-size:37.5rpx;height:auto;margin-left:auto;","content":"","customFeature":{"mode":1,"with-horizontal":true,"topSectionStyle":{"background-color":"","background-image":"url(http:\/\/cdn.jisuapp.cn\/zhichi_frontend\/static\/webapp\/images\/top_bg.jpg)"},"appendComponentAttr":{"myAddress":{"margin-top":"-1px","openVerifyPhone":false},"myOrder":{"margin-top":"-1px","openVerifyPhone":false},"shoppingCart":{"margin-top":"-1px","openVerifyPhone":false},"myMessage":{"margin-top":"-1px","openVerifyPhone":false},"vipCard":{"margin-top":"-1px","openVerifyPhone":false},"coupon":{"margin-top":"-1px","openVerifyPhone":false},"myIntegral":{"margin-top":"-1px","openVerifyPhone":false},"balance":{"margin-top":"-1px","openVerifyPhone":false},"myGroup":{"margin-top":"-1px","openVerifyPhone":false},"winningRecord":{"margin-top":"-1px","openVerifyPhone":false},"myVideo":{"margin-top":"-1px","openVerifyPhone":false}},"appendComponent":["myAddress","myOrder","shoppingCart","myMessage","vipCard","coupon","myIntegral","balance","myGroup"]},"animations":[],"page_form":"","compId":"user_center1","parentCompid":"user_center1"},"has_tabbar":1,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u9996\u9875"}},
+  data: {
+    "user_center1": {
+      "type": "user-center",
+      "style": "opacity:1;color:rgb(255, 255, 255);margin-top:0;font-size:37.5rpx;height:auto;margin-left:auto;",
+      "content": "",
+      "customFeature": {
+        "mode": 1,
+        "with-horizontal": true,
+        "topSectionStyle": {
+          "background-color": "",
+          "background-image": "url(http:\/\/cdn.jisuapp.cn\/zhichi_frontend\/static\/webapp\/images\/top_bg.jpg)"
+        },
+        "appendComponentAttr": {
+          "myAddress": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "myOrder": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "shoppingCart": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "myMessage": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "vipCard": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "coupon": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "myIntegral": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "balance": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "myGroup": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "winningRecord": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          },
+          "myVideo": {
+            "margin-top": "-1px",
+            "openVerifyPhone": false
+          }
+        },
+        "appendComponent": ["myAddress", "myOrder", "shoppingCart", "myMessage", "vipCard", "coupon", "myIntegral", "balance", "myGroup"]
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "user_center1",
+      "parentCompid": "user_center1"
+    },
+    "has_tabbar": 1,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u9996\u9875"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10004',
     page_form: 'none',

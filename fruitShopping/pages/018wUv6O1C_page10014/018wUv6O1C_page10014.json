@@ -1,1 +1,10 @@
-{"navigationBarTitleText":"\u5165\u9a7b\u7533\u8bf7","usingComponents":{"component-share":"\/components\/pageQRCode\/pageQRCode","component-backhome":"\/components\/backToHomePage\/backToHomePage","component-reward-point":"\/components\/rewardPointModal\/rewardPointModal","component-shop-vip":"\/components\/shopVipModal\/shopVipModal","component-announce":"\/components\/announce\/announce"}}
+{
+  "navigationBarTitleText": "\u5165\u9a7b\u7533\u8bf7",
+  "usingComponents": {
+    "component-share": "\/components\/pageQRCode\/pageQRCode",
+    "component-backhome": "\/components\/backToHomePage\/backToHomePage",
+    "component-reward-point": "\/components\/rewardPointModal\/rewardPointModal",
+    "component-shop-vip": "\/components\/shopVipModal\/shopVipModal",
+    "component-announce": "\/components\/announce\/announce"
+  }
+}

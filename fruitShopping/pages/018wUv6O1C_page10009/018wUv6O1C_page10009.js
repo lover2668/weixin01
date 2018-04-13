@@ -1,7 +1,62 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"picture1":{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:246.09375rpx;width:703.125rpx;margin-left:auto;margin-right:auto;","content":"http:\/\/img.weiye.me\/zcimgdir\/album\/file_59c1cae46a89e.png","customFeature":{"boxShadow":"('#000','0','0','5')","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5"},"animations":[],"page_form":"","compId":"picture1","parentCompid":"picture1"},"seckill2":{"type":"seckill","style":"background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:32.8125rpx;height:auto;margin-left:auto;","content":"","customFeature":{"lineBackgroundColor":"rgb(255, 255, 255)","lineBackgroundImage":"","margin":"3","lineHeight":"86","imgWidth":"80","imgHeight":"80","vesselAutoheight":1,"height":"300px","form":"goods","mode":0,"name":"\u79d2\u6740\u5217\u8868","ifUseContact":true,"isIntegral":false,"isShoppingCart":false,"id":"list-123778169952"},"animations":[],"page_form":"","compId":"seckill2","parentCompid":"seckill2","list_style":"margin-bottom:7.03125rpx;background-color:rgb(255, 255, 255);height:201.5625rpx;margin-left:auto;","img_style":"width:187.5rpx;height:187.5rpx;margin-left:auto;","title_width":{"width":"539.0625rpx"},"param":"{\"id\":\"list-123778169952\",\"form\":\"goods\",\"goods_type\":0,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0,\"is_seckill\":1,\"is_integral\":0}"},"has_tabbar":1,"page_hidden":true,"page_form":"","top_nav":{"navigationBarTitleText":"\u79d2\u6740"}},
+  data: {
+    "picture1": {
+      "type": "picture",
+      "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:246.09375rpx;width:703.125rpx;margin-left:auto;margin-right:auto;",
+      "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_59c1cae46a89e.png",
+      "customFeature": {
+        "boxShadow": "('#000','0','0','5')",
+        "boxColor": "#000",
+        "boxX": "0",
+        "boxY": "0",
+        "boxR": "5"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "picture1",
+      "parentCompid": "picture1"
+    },
+    "seckill2": {
+      "type": "seckill",
+      "style": "background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:32.8125rpx;height:auto;margin-left:auto;",
+      "content": "",
+      "customFeature": {
+        "lineBackgroundColor": "rgb(255, 255, 255)",
+        "lineBackgroundImage": "",
+        "margin": "3",
+        "lineHeight": "86",
+        "imgWidth": "80",
+        "imgHeight": "80",
+        "vesselAutoheight": 1,
+        "height": "300px",
+        "form": "goods",
+        "mode": 0,
+        "name": "\u79d2\u6740\u5217\u8868",
+        "ifUseContact": true,
+        "isIntegral": false,
+        "isShoppingCart": false,
+        "id": "list-123778169952"
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "seckill2",
+      "parentCompid": "seckill2",
+      "list_style": "margin-bottom:7.03125rpx;background-color:rgb(255, 255, 255);height:201.5625rpx;margin-left:auto;",
+      "img_style": "width:187.5rpx;height:187.5rpx;margin-left:auto;",
+      "title_width": {
+        "width": "539.0625rpx"
+      },
+      "param": "{\"id\":\"list-123778169952\",\"form\":\"goods\",\"goods_type\":0,\"page\":1,\"app_id\":\"71ZAO5zjo1\",\"is_count\":0,\"is_seckill\":1,\"is_integral\":0}"
+    },
+    "has_tabbar": 1,
+    "page_hidden": true,
+    "page_form": "",
+    "top_nav": {
+      "navigationBarTitleText": "\u79d2\u6740"
+    }
+  },
     need_login: false,
     page_router: '018wUv6O1C_page10009',
     page_form: 'none',
