@@ -1,12 +1,56 @@
 {
-  "pages":[
+  "pages": [
+    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "default/pages/advanceSearch/advanceSearch",
+    "default/pages/bindCellphone/bindCellphone",
+    "default/pages/extensionPage/extensionPage",
+    "default/pages/mapDetail/mapDetail",
+    "eCommerce/pages/myAddress/myAddress",
+    "eCommerce/pages/addAddress/addAddress",
+    "eCommerce/pages/transferPage/transferPage",
+    "eCommerce/pages/transferOrderDetail/transferOrderDetail",
+    "eCommerce/pages/transferPaySuccess/transferPaySuccess",
+    "eCommerce/pages/searchAddress/searchAddress",
+    "eCommerce/pages/makeComment/makeComment",
+    "eCommerce/pages/goodsAdditionalInfo/goodsAdditionalInfo",
+    "eCommerce/pages/logisticsPage/logisticsPage",
+    "eCommerce/pages/myOrder/myOrder",
+    "eCommerce/pages/goodsComment/goodsComment",
+    "eCommerce/pages/shoppingCart/shoppingCart",
+    "eCommerce/pages/verificationCodePage/verificationCodePage",
+    "eCommerce/pages/previewGoodsOrder/previewGoodsOrder",
+    "eCommerce/pages/goodsOrderDetail/goodsOrderDetail",
+    "eCommerce/pages/goodsOrderPaySuccess/goodsOrderPaySuccess",
+    "eCommerce/pages/vipCard/vipCard",
+    "eCommerce/pages/couponList/couponList",
+    "eCommerce/pages/couponListPage/couponListPage",
+    "eCommerce/pages/couponReceiveListPage/couponReceiveListPage",
+    "eCommerce/pages/couponGoodsListPage/couponGoodsListPage",
+    "eCommerce/pages/balance/balance",
+    "eCommerce/pages/recharge/recharge",
+    "informationManagement/pages/communityPage/communityPage",
+    "informationManagement/pages/communityPublish/communityPublish",
+    "informationManagement/pages/communityDetail/communityDetail",
+    "informationManagement/pages/communityUsercenter/communityUsercenter",
+    "informationManagement/pages/communityNotify/communityNotify",
+    "informationManagement/pages/communityFailpass/communityFailpass",
+    "informationManagement/pages/communityReport/communityReport",
+    "userCenter/pages/myMessage/myMessage",
+    "userCenter/pages/myIntegral/myIntegral",
+    "userCenter/pages/winningRecord/winningRecord",
+    "pages/orderDetail/orderDetail",
+    "pages/tabbarShoppingCart/tabbarShoppingCart",
+    "pages/tabbarMyOrder/tabbarMyOrder",
+    "pages/goodsDetail/goodsDetail",
+    "pages/userCenter/userCenter",
+    "pages/couponDetail/couponDetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
