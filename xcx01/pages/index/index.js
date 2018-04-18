@@ -4,10 +4,11 @@ const app = getApp()
 
 Page({
   data: {
+    title: "",
     current: 0,
     indicatorDots: true,
     autoplay: true,
-    interval: 3000,
+    interval: 2000,
     duration: 500,
     circular: true,
     lastTapDiffTime: 0,
@@ -27,6 +28,11 @@ Page({
         url:'https://p3.pstatp.com/large/31fa0003ed7228adf421'
       }
     ],
+    item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-09-15'
+    },
     //links: [
     //  '../images/home_bar_1',
     //  '../images/home_bar_2',
@@ -112,6 +118,7 @@ Page({
     console.log(e.currentTarget.dataset.id);
     console.log(e.currentTarget.dataset.link);
     console.log(e);
+    console.log(this.route);
     console.log(e.currentTarget.dataset.url);
   },
   swiperChange: function (e) {
@@ -132,7 +139,8 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
