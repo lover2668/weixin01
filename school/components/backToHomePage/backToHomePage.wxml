@@ -1,2 +1,2 @@
 <!--components/backToHomePage/backToHomePage.wxml-->
-<text>components/backToHomePage/backToHomePage.wxml</text>
+<view class='icon-back-to-home ico-moon' hidden="{{!backToHomePage.showButton}}" catchtap='backToHomePage' style="background-color:rgba(0, 0, 0, 0.6);"></view>

@@ -1,6 +1,10 @@
 <!--pages/home/home.wxml-->
 <view class="app" hidden='{{page_hidden}}'>
 <web-view wx-if="{{false}}" src="{{false}}"></web-view>
+<component-share pageQRCodeData="{{pageQRCodeData}}"></component-share>
+<component-backhome backToHomePage="{{backToHomePage}}"></component-backhome>
+<component-reward-point rewardPointObj="{{rewardPointObj}}"></component-reward-point>
+<component-shop-vip shopVipModal="{{shopVip}}"></component-shop-vip>
 
 <template name="zcCarousel">
   <swiper indicator-dots="true" circular="true" autoplay="{{data.customFeature.autoplay}}" vertical="{{data.customFeature.vertical}}" interval="{{data.customFeature.interval*1000}}" duration="800" indicator-color="{{ data.customFeature.indicatorColor }}" indicator-active-color="{{ data.customFeature.indicatorActiveColor }}" style="{{data.style}}">
