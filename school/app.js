@@ -35,6 +35,7 @@ App({
   },
 
   tapInnerLinkHandler: function (event) {
+    console.log(event.currentTarget.dataset.eventParams);
     let param = event.currentTarget.dataset.eventParams,
       pageRoot = {
         'groupCenter': '/eCommerce/pages/groupCenter/groupCenter',
@@ -43,8 +44,12 @@ App({
       };
     if (param) {
       param = JSON.parse(param);
+      console.log(param);
       let pageLink = param.inner_page_link;
+      console.log(pageRoot);
+      console.log(pageLink);
       let url = pageRoot[pageLink] ? pageRoot[pageLink] : '/pages/' + pageLink + '/' + pageLink;
+      console.log(url);
       if (url.indexOf('/prePage/') >= 0) {
         this.turnBack();
       } else if (url) {
@@ -55,16 +60,22 @@ App({
   },
   
   turnToPage: function (url, isRedirect) {
+    console.log(url)
+    console.log(isRedirect)
     let tabBarPagePathArr = this.getTabPagePathArr();
+    console.log(tabBarPagePathArr)
+
     if (this.globalData.turnToPageFlag) return;
     this.globalData.turnToPageFlag = true;
     setTimeout(() => {
       this.globalData.turnToPageFlag = false;
     }, 1000)
+    
     if (tabBarPagePathArr.indexOf(url) != -1) {
       this.switchToTab(url);
       return;
     }
+    
     if (!isRedirect) {
       wx.navigateTo({
         url: url
@@ -75,9 +86,40 @@ App({
       });
     }
   },
-
+  getTabPagePathArr: function () {
+    return JSON.parse(this.globalData.tabBarPagePathArr);
+  },
+  switchToTab: function (url) {
+    wx.switchTab({
+      url: url
+    });
+  },
 
   globalData: {
-    userInfo: null
+    appId: 'rYutUqUUaR',
+    tabBarPagePathArr: '["/pages/home/home","/pages/course/course","/pages/video/video","/pages/mine/mine"]',
+    homepageRouter: 'home',
+    formData: null,
+    userInfo: {},
+    systemInfo: null,
+    sessionKey: '',
+    notBindXcxAppId: false,
+    waimaiTotalNum: 0,
+    waimaiTotalPrice: 0,
+    takeoutLocate: {},
+    takeoutRefresh: false,
+    isLogin: false,
+    locationInfo: {
+      latitude: '',
+      longitude: '',
+      address: ''
+    },
+    getDistributionInfo: '',
+    getDistributorInfo: '',
+    PromotionUserToken: '',
+    previewGoodsOrderGoodsInfo: [],
+    goodsAdditionalInfo: {},
+    urlLocationId: '',
+    turnToPageFlag: false
   }
 })
