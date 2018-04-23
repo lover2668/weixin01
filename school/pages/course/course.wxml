@@ -1,2 +1,4 @@
 <!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<view>
+  <image class="course_img" src='http://www.gqdoor.cn/templets/gqmm/images/mmty/zs_01.png'></image>
+</view>
