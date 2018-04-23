@@ -8,3 +8,122 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.app .ele-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+}
+
+.app .ele-container > .element {
+  position: relative;
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+.center-ele {
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+.background-ele {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+page {
+  font-size: 32.8125rpx;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+a {
+  color: inherit;
+}
+.element > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.app .video {
+  height: 351.5625rpx;
+  overflow: hidden;
+}
+.app .video video {
+  height: 100%;
+  width: 100%;
+}
+
+.app .album {
+	width: 100% !important;
+	height: auto!important;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+.app .album-container {
+	color: inherit;
+	font-size: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+}
+
+.app .album.sec-mode {
+	color: #444;
+}
+.app .album-container .album-pic {
+  position: relative;
+  float: left;
+  width: 234.375rpx;
+  text-decoration: inherit;
+}
+.app .album-container.sideslip .album-pic {
+  float: none;
+  display: inline-block;
+}
+.app .album-container .album-pic > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.app .album-container .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 1.6em;
+	background-color: rgba(0,0,0,.5);
+	text-decoration: inherit;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  display: inline-block;
+}
+.app .album-container a {
+	text-decoration: inherit;
+	color: inherit;
+}
+.app .album.sec-mode .title {
+	position: static;
+	background-color: transparent;
+}
+.app .album-container image {
+	float: left;
+	width: 100%;
+	height: 240rpx;
+}
+.app .album-container.sideslip image {
+	float: none;
+	width: 100%;
+	height: 240rpx;
+}

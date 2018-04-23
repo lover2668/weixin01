@@ -24,5 +24,37 @@
   <template is="zcCarousel" data="{{data:carousel1}}"></template>
 </view>
 
+<template name="zcAlbum">
+  <view class="element album {{data.html_mode}}" style="{{data.style}}">
+    <view class="album-container background-ele clearfix" style="{{data.ul_style}}" wx:if="{{!data.customFeature.isSideslip}}">
+      <view wx:for="{{data.li}}"
+            class="{{item.li_class}}"
+            style="{{item.li_style}}"
+            wx:key=""
+            data-event-params="{{item.eventParams}}"
+            catchtap="{{item.eventHandler}}">
+        <image src="{{item.pic}}" style="{{item.img_style}}" mode="scaleToFill"></image>
+        <text class="title">{{item.title}}</text>
+      </view>
+    </view>
+    <view class='album-container sideslip' wx:if="{{data.customFeature.isSideslip}}">
+      <scroll-view scroll-x="{{true}}" style="{{'padding-top:'+ data.customFeature['padding-top']+'px;margin-bottom:'+data.customFeature['padding-top']+'px;white-space:nowrap;padding-right:'+data.customFeature['padding-left']+'px;'}}">
+        <view wx:for="{{data.li}}"
+              class="{{item.li_class}}"
+              style="{{'width:'+data.customFeature.width+';margin-left:'+data.customFeature['padding-left']+'px;'+ (index == data.li.length - 1 ? 'margin-right:'+data.customFeature['padding-left']+'px' : '')  }}"
+              wx:key=""
+              data-event-params="{{item.eventParams}}"
+              catchtap="{{item.eventHandler}}">
+          <image src="{{item.pic}}" style="{{item.img_style}}display:block;height: {{data.customFeature.imgHeight}};" mode="scaleToFill"></image>
+          <text class="title">{{item.title}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</template>
+
+<view class="ele-container">
+  <template is="zcAlbum" data="{{data:album2}}"></template>
+</view>
 
 </view>

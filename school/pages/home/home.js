@@ -48,6 +48,81 @@ var pageData = {
       "page_form": "",
       "compId": "carousel1"
     },
+
+    "album2": {
+      "style": "background-color:rgb(255, 255, 255);font-size:28.125rpx;opacity:1;text-align:center;margin-left:auto;",
+      "ul_style": "padding-left:82.03125rpx;padding-top:23.4375rpx;margin-left:auto;",
+      "html_mode": "sec-mode",
+      "li": [{
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "course"
+        },
+        "li_class": "album-pic router",
+        "action": "inner-link",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f05797a81e3.png",
+        "title": "课程",
+        "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"course\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
+      }, {
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "video"
+        },
+        "li_class": "album-pic router",
+        "action": "inner-link",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579b77205.png",
+        "title": "学堂",
+        "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"video\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
+      }, {
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "mine"
+        },
+        "li_class": "album-pic router",
+        "action": "inner-link",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579fe81dc.png",
+        "title": "预约",
+        "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"mine\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
+      }, {
+        "customFeature": {
+          "action": "inner-link",
+          "page-link": "shopping"
+        },
+        "li_class": "album-pic router",
+        "action": "inner-link",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f057a2ade02.png",
+        "title": "购物车",
+        "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
+        "eventParams": "{\"inner_page_link\":\"shopping\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
+      }],
+      "customFeature": {
+        "col": 4,
+        "imgHeight": "36.25px",
+        "mode": 1,
+        "padding-left": "35",
+        "padding-top": "10",
+        "picBorderRadius": "50%",
+        "row": "1",
+        "action": "",
+        "imgWidth": 76.25
+      },
+      "itemType": "album",
+      "itemParentType": null,
+      "itemIndex": "album2",
+      "content": ""
+    },
+
     "has_tabbar": 1,
     "page_hidden": "",
     "page_form": "",
