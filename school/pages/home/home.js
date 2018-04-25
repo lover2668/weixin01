@@ -14,7 +14,7 @@ var pageData = {
       "content": [{
         "customFeature": {
           "action": "inner-link",
-          "page-link": "course"
+          "page-link": "shopping"
         },
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ef9256671fa.png",
         "content": "",
@@ -23,12 +23,12 @@ var pageData = {
         "itemType": null,
         "itemParentType": "carousel",
         "itemIndex": 0,
-        "eventParams": "{\"inner_page_link\":\"course\",\"is_redirect\":0}",
+        "eventParams": "{\"inner_page_link\":\"shopping\",\"is_redirect\":0}",
         "eventHandler": "tapInnerLinkHandler"
       }, {
         "customFeature": {
           "action": "inner-link",
-          "page-link": "video"
+          "page-link": "goodsDetail"
         },
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ef91634e754.png",
         "content": "",
@@ -37,7 +37,7 @@ var pageData = {
         "itemType": null,
         "itemParentType": "carousel",
         "itemIndex": 1,
-        "eventParams": "{\"inner_page_link\":\"video\",\"is_redirect\":0}",
+        "eventParams": "{\"inner_page_link\":\"goodsDetail\",\"is_redirect\":0}",
         "eventHandler": "tapInnerLinkHandler"
       }],
       "customFeature": {
