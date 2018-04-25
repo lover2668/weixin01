@@ -170,3 +170,27 @@ a {
   border:5rpx solid #fff;
 }
 
+.app .breakline {
+  border-width: 1px;
+  border-color: #DDD;
+  border-bottom-style: solid;
+}
+.app .free-vessel .breakline {
+  width: 100%;
+}
+.app .page .ele-container .breakline {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.app .free-vessel {
+	width: 100%;
+	height: 200px;
+  overflow:hidden;
+}
+
+.app .text-word-wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

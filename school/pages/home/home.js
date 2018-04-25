@@ -123,39 +123,53 @@ var pageData = {
       "content": ""
     },
 
-    "free_vessel3": {
+    "free_vessel2": {
       "type": "free-vessel",
-      "style": "width:750rpx;height:82.03125rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:11.71875rpx;opacity:1;margin-left:auto;",
+      "style": "width:750rpx;height:70.3125rpx;margin-bottom:auto;margin-right:auto;margin-top:-93.75rpx;opacity:1;margin-left:auto;",
       "content": [{
         "type": "picture",
-        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:82.03125rpx;width:750rpx;margin-left:0;margin-right:0;margin-top:0;position:absolute;",
-        "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f03d2a3a308.png",
+        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:70.3125rpx;width:750rpx;margin-left:0;margin-right:0;margin-top:0;position:absolute;",
+        "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_593f8831a32de.png",
         "customFeature": {
-          "boxShadow": "5",
+          "boxShadow": "('#000','0','0','5')",
           "boxColor": "#000",
           "boxX": "0",
           "boxY": "0",
-          "boxR": "5"
+          "boxR": "5",
+          "action": "inner-link",
+          "inner-page-link": "shopping"
         },
         "animations": [],
         "compId": "data.content[0]",
-        "parentCompid": "free_vessel3"
+        "parentCompid": "free_vessel2",
+        "itemType": "picture",
+        "itemParentType": "free-vessel",
+        "itemIndex": 0,
+        "eventParams": "{\"inner_page_link\":\"shopping\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
       }, {
         "type": "text",
-        "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(96, 212, 225);font-size:35.15625rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:0;margin-top:0;opacity:1;text-align:left;position:absolute;left:304.6875rpx;top:18.75rpx;margin-right:0;",
-        "content": "\u70ed\u95e8\u6d3b\u52a8",
+        "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(204, 204, 204);font-size:32.8125rpx;height:82.53125rpx;margin-left:0;margin-top:12rpx;opacity:1;text-align:left;position:absolute;left:234.375rpx;top:18.75rpx;margin-right:0;",
+        "content": "课程 名师",
         "customFeature": {
           "boxColor": "rgb(0, 0, 0)",
           "boxR": "5",
           "boxStyle": false,
           "boxX": "0",
-          "boxY": "0"
+          "boxY": "0",
+          "action": "inner-link",
+          "inner-page-link": "shopping"
         },
         "animations": [],
         "compId": "data.content[1]",
-        "parentCompid": "free_vessel3",
+        "parentCompid": "free_vessel2",
         "markColor": "",
-        "mode": 0
+        "mode": 0,
+        "itemType": "text",
+        "itemParentType": "free-vessel",
+        "itemIndex": 1,
+        "eventParams": "{\"inner_page_link\":\"shopping\",\"is_redirect\":0}",
+        "eventHandler": "tapInnerLinkHandler"
       }],
       "customFeature": {
         "boxColor": "rgb(0, 0, 0)",
@@ -166,7 +180,7 @@ var pageData = {
       },
       "animations": [],
       "page_form": "",
-      "compId": "free_vessel3"
+      "compId": "free_vessel2"
     },
 
     "has_tabbar": 1,
