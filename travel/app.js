@@ -251,16 +251,29 @@ App({
     return query.length ? query.substr(0, query.length - 1) : query;
   },
   turnToPage: function (url, isRedirect) {
+
+    console.log("[Fun turnToPage]: url: " + url);
+
     let tabBarPagePathArr = this.getTabPagePathArr();
+
+    console.log("[Fun turnToPage]: tabBarPagePathArr: " + tabBarPagePathArr);
+    console.log("[Fun turnToPage]: turnToPageFlag: " + this.globalData.turnToPageFlag);
+
     if (this.globalData.turnToPageFlag)return;
     this.globalData.turnToPageFlag = true;
     setTimeout(() => {
       this.globalData.turnToPageFlag = false;
     }, 1000)
+    
+    console.log("[Fun turnToPage]: indexof: " + tabBarPagePathArr.indexOf(url));
+
     if(tabBarPagePathArr.indexOf(url) != -1) {
       this.switchToTab(url);
       return;
     }
+
+    console.log("[Fun turnToPage]: isRedirect: " + isRedirect);
+
     if(!isRedirect){
       wx.navigateTo({
         url: url
@@ -285,7 +298,14 @@ App({
     });
   },
   turnBack: function (options) {
+
+    console.log("[Fun turnBack]: options before: " + options);
+
     options = options || {};
+
+    console.log("[Fun turnBack]: options after: " + options);
+    console.log("[Fun turnBack]: delta: " + options.delta);
+
     wx.navigateBack({
       delta: options.delta || 1
     });
@@ -5411,10 +5431,21 @@ App({
           'shoppingCart': '/eCommerce/pages/shoppingCart/shoppingCart',
           'myOrder': '/eCommerce/pages/myOrder/myOrder',
         };
+
+    console.log("[Fun tapInnerLinkHandler]: param before: " + param);
+
     if (param) {
       param = JSON.parse(param);
+
+      console.log("[Fun tapInnerLinkHandler]: param after: " + param);
+
       let pageLink = param.inner_page_link;
       let url = pageRoot[pageLink] ? pageRoot[pageLink] : '/pages/' + pageLink + '/' + pageLink ;
+
+      console.log("[Fun tapInnerLinkHandler]: url: " + url);
+      console.log("[Fun tapInnerLinkHandler]: is_redirect: " + param.is_redirect);
+      console.log("[Fun tapInnerLinkHandler]: indexOf: " + url.indexOf('/prePage/'));
+
       if (url.indexOf('/prePage/') >= 0) {
         this.turnBack();
       } else if (url) {

@@ -3,8 +3,8 @@
   "usingComponents": {
     "component-share": "\/components\/pageQRCode\/pageQRCode",
     "component-backhome": "\/components\/backToHomePage\/backToHomePage",
-    "component-reward-point": "\/components\/rewardPointModal\/rewardPointModal",
-    "component-shop-vip": "\/components\/shopVipModal\/shopVipModal",
+    "component-reward-point": "\/components\/rewardPoint\/rewardPoint",
+    "component-shop-vip": "\/components\/shopVip\/shopVip",
     "component-announce": "\/components\/announce\/announce"
   }
 }

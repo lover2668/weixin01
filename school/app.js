@@ -35,21 +35,33 @@ App({
   },
 
   tapInnerLinkHandler: function (event) {
-    console.log(event.currentTarget.dataset.eventParams);
+    console.log("[Fun tapInnerLinkHandler]: eventParams: " + event.currentTarget.dataset.eventParams);
+
     let param = event.currentTarget.dataset.eventParams,
       pageRoot = {
         'groupCenter': '/eCommerce/pages/groupCenter/groupCenter',
         'shoppingCart': '/eCommerce/pages/shoppingCart/shoppingCart',
         'myOrder': '/eCommerce/pages/myOrder/myOrder',
       };
+
+    console.log("[Fun tapInnerLinkHandler]: param before: " + param);
+
     if (param) {
       param = JSON.parse(param);
-      console.log(param);
+      
+      console.log("[Fun tapInnerLinkHandler]: Json param: " + param);
+
       let pageLink = param.inner_page_link;
-      console.log(pageRoot);
-      console.log(pageLink);
+
+      console.log("[Fun tapInnerLinkHandler]: pageRoot: " + pageRoot);
+      console.log("[Fun tapInnerLinkHandler]: pageLink: " + pageLink);
+
       let url = pageRoot[pageLink] ? pageRoot[pageLink] : '/pages/' + pageLink + '/' + pageLink;
-      console.log(url);
+
+      console.log("[Fun tapInnerLinkHandler]: url: " + url);
+      console.log("[Fun tapInnerLinkHandler]: is_redirect: " + param.is_redirect);
+      console.log("[Fun tapInnerLinkHandler]: indexOf: " + url.indexOf('/prePage/'));
+
       if (url.indexOf('/prePage/') >= 0) {
         this.turnBack();
       } else if (url) {
@@ -60,22 +72,31 @@ App({
   },
   
   turnToPage: function (url, isRedirect) {
-    console.log(url)
-    console.log(isRedirect)
+    console.log("[Fun turnToPage]: url: " + url);
+ 
     let tabBarPagePathArr = this.getTabPagePathArr();
-    console.log(tabBarPagePathArr)
+
+    console.log("[Fun turnToPage]: tabBarPagePathArr: " + tabBarPagePathArr);
+
+    console.log("[Fun turnToPage]: turnToPageFlag: " + this.globalData.turnToPageFlag);
 
     if (this.globalData.turnToPageFlag) return;
+
     this.globalData.turnToPageFlag = true;
+
     setTimeout(() => {
       this.globalData.turnToPageFlag = false;
     }, 1000)
     
+    console.log("[Fun turnToPage]: indexOf: " + tabBarPagePathArr.indexOf(url));
+
     if (tabBarPagePathArr.indexOf(url) != -1) {
       this.switchToTab(url);
       return;
     }
     
+    console.log("[Fun turnToPage]: redirect: " + isRedirect);
+
     if (!isRedirect) {
       wx.navigateTo({
         url: url
@@ -86,13 +107,33 @@ App({
       });
     }
   },
-  getTabPagePathArr: function () {
-    return JSON.parse(this.globalData.tabBarPagePathArr);
+  reLaunch: function (options) {
+    wx.reLaunch({
+      url: options.url,
+      success: options.success,
+      fail: options.fail,
+      complete: options.complete
+    })
   },
   switchToTab: function (url) {
     wx.switchTab({
       url: url
     });
+  },
+  turnBack: function (options) {
+    console.log("[Fun turnBack]: options before: " + options);
+
+    options = options || {};
+
+    console.log("[Fun turnBack]: options after: " + options);
+    console.log("[Fun turnBack]: delta: " + options.delta);
+
+    wx.navigateBack({
+      delta: options.delta || 1
+    });
+  },
+  getTabPagePathArr: function () {
+    return JSON.parse(this.globalData.tabBarPagePathArr);
   },
 
   globalData: {
