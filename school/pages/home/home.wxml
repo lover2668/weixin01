@@ -61,4 +61,7 @@
   <template is="zcAlbum" data="{{data:album2}}"></template>
 </view>
 
+
+
+
 </view>

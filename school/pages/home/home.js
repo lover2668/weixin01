@@ -123,6 +123,52 @@ var pageData = {
       "content": ""
     },
 
+    "free_vessel3": {
+      "type": "free-vessel",
+      "style": "width:750rpx;height:82.03125rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:11.71875rpx;opacity:1;margin-left:auto;",
+      "content": [{
+        "type": "picture",
+        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:82.03125rpx;width:750rpx;margin-left:0;margin-right:0;margin-top:0;position:absolute;",
+        "content": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f03d2a3a308.png",
+        "customFeature": {
+          "boxShadow": "5",
+          "boxColor": "#000",
+          "boxX": "0",
+          "boxY": "0",
+          "boxR": "5"
+        },
+        "animations": [],
+        "compId": "data.content[0]",
+        "parentCompid": "free_vessel3"
+      }, {
+        "type": "text",
+        "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(96, 212, 225);font-size:35.15625rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:0;margin-top:0;opacity:1;text-align:left;position:absolute;left:304.6875rpx;top:18.75rpx;margin-right:0;",
+        "content": "\u70ed\u95e8\u6d3b\u52a8",
+        "customFeature": {
+          "boxColor": "rgb(0, 0, 0)",
+          "boxR": "5",
+          "boxStyle": false,
+          "boxX": "0",
+          "boxY": "0"
+        },
+        "animations": [],
+        "compId": "data.content[1]",
+        "parentCompid": "free_vessel3",
+        "markColor": "",
+        "mode": 0
+      }],
+      "customFeature": {
+        "boxColor": "rgb(0, 0, 0)",
+        "boxR": 5,
+        "boxStyle": false,
+        "boxX": 0,
+        "boxY": 0
+      },
+      "animations": [],
+      "page_form": "",
+      "compId": "free_vessel3"
+    },
+
     "has_tabbar": 1,
     "page_hidden": "",
     "page_form": "",
