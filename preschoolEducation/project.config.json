@@ -1,11 +1,5 @@
 {
 	"description": "项目配置文件。",
-<<<<<<< HEAD
-	"packOptions": {
-		"ignore": []
-	},
-=======
->>>>>>> 3ee403079ab48aa68c16dbb3c3a4b45e33cc668f
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -14,15 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-<<<<<<< HEAD
-	"libVersion": "1.9.98",
-	"appid": "wxdd1fe843c910d73d",
-	"projectname": "excellentEducation",
-=======
 	"libVersion": "1.9.94",
 	"appid": "wxdd1fe843c910d73d",
-	"projectname": "excellentDeucation",
->>>>>>> 3ee403079ab48aa68c16dbb3c3a4b45e33cc668f
+	"projectname": "preschoolEducation",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
