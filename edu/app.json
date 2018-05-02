@@ -7,10 +7,53 @@
     "pages/detail/detail",
     "pages/mine/mine"
   ],
+
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "backgroundColor": "#FF4040",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": "50",
+    "navigationBarBackgroundColor": "#080",
+    "navigationBarTitleText": "黄冈网校",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#999999",
+    "selectedColor": "#d42374",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "iconPath": "images/home_default.png",
+        "selectedIconPath": "images/home_select.png",
+        "text": "首页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "iconPath": "images/course_default.png",
+        "selectedIconPath": "images/course_select.png",
+        "text": "课程",
+        "pagePath": "pages/product/product"
+      },
+      {
+        "iconPath": "images/video_default.png",
+        "selectedIconPath": "images/video_select.png",
+        "text": "微课堂",
+        "pagePath": "pages/video/video"
+      },
+      {
+        "iconPath": "images/mine_default.png",
+        "selectedIconPath": "images/mine_select.png",
+        "text": "我的",
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
 }
