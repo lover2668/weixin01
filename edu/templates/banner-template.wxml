@@ -1,7 +1,7 @@
 <template name="bannerTemplate">
   <view class="banner-container">
-    <swiper indicator-dots="{{banner.indicatorDots}}" interval="{{banner.interval}}" duration="{{banner.duration}}" autoplay="{{banner.autoplay}}" circular="{{banner.circular}}">
-      <block  wx:for="{{banner.content}}" wx:for-item="item" wx:key="unique">
+    <swiper indicator-dots="{{bannerData.banner.indicatorDots}}" interval="{{bannerData.banner.interval}}" duration="{{bannerData.banner.duration}}" autoplay="{{bannerData.banner.autoplay}}" circular="{{bannerData.banner.circular}}">
+      <block  wx:for="{{bannerData.banner.content}}" wx:for-item="item" wx:key="unique">
         <swiper-item class="banner-swiper-item" >
           <image class="banner-img" src="{{item.pic}}"></image>
         </swiper-item>

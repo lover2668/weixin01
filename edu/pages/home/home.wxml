@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
 <import src="../../templates/banner-template.wxml"/>
 <view>
-  <template is="bannerTemplate" data="{{banner}}" />
+  <template is="bannerTemplate" data="{{bannerData}}" />
 </view>
