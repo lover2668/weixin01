@@ -38,7 +38,6 @@ Page({
     })
 
     console.log(this.data.bannerData)
-    console.log(this.data.bannerData)
   },
 
   /**
