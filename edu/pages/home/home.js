@@ -34,11 +34,11 @@ Page({
     console.log(newsData.bannerCarousel)
     
     this.setData({
-      bannerData:newsData.bannerCarousel
+      bannerData: newsData.bannerCarousel
     })
 
     console.log(this.data.bannerData)
-    console.log(this.data.bannerData.bannerInfo)
+    console.log(this.data.bannerData)
   },
 
   /**
