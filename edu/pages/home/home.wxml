@@ -1,5 +1,10 @@
 <!--pages/home/home.wxml-->
 <import src="../../templates/banner-template.wxml"/>
+<import src="../../templates/category-template.wxml"/>
+
 <view>
-  <template is="bannerTemplate" data="{{bannerData}}" />
+
+  <template is="categoryTemplate" data="{{categoryData}}" />
+  <!-- <template is="bannerTemplate" data="{{bannerData}}" /> -->
+
 </view>

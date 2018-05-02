@@ -1,0 +1,8 @@
+<template class="categoryTemplate">
+  <view class="category-container">
+    <view class="album-container">
+      <view wx:for="{{categoryData.album.content}}">
+      </view>
+    </view>
+  </view>
+</template>

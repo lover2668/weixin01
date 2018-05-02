@@ -1,5 +1,6 @@
 // pages/home/home.js
 var newsData = require("../../data/bannerData.js");
+var albumData = require("../../data/categoryData.js");
 
 Page({
 
@@ -7,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    /*
     "banner": {
       "indicatorDots": true,
       "autoplay": true,
@@ -23,6 +25,14 @@ Page({
         }
       ],
     },
+    */
+    /*
+    "category": {
+      "categoryData": ""
+    }
+    */
+
+    "categoryData": ""
   },
 
   /**
@@ -34,10 +44,12 @@ Page({
     console.log(newsData.bannerCarousel)
     
     this.setData({
-      bannerData: newsData.bannerCarousel
+      bannerData: newsData.bannerCarousel,
+      categoryData: albumData.categoryAlbum
     })
 
     console.log(this.data.bannerData)
+    console.log(this.data.categoryData)
   },
 
   /**
