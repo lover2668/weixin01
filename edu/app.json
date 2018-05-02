@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/product/product",
+    "pages/shopping/shopping",
+    "pages/video/video",
+    "pages/detail/detail",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
