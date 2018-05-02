@@ -1,15 +1,5 @@
-/* pages/home/home.wxss */
-.banner-container {
-  width: 100%;
-  height: 350rpx;
-}
+/*
+@import "../../data/bannerData.wxss"
+*/
+@import "../../templates/banner-template.wxss"
 
-.banner-container banner-swiper-item {
-  width: 100%;
-  height: 350rpx;
-}
-
-.banner-container banner-swiper-item banner-img {
-  width: 100%;
-  height: 350rpx;
-}
