@@ -1,6 +1,6 @@
-var categoryAlbum = {
+var sortAlbum = {
   "album": {
-    "categoryData": "",
+    "sortData": "",
     "content": [
       {
         "title": "简介",
@@ -23,5 +23,5 @@ var categoryAlbum = {
 }
 
 module.exports = {
-  categoryAlbum: categoryAlbum
+  sortAlbum: sortAlbum
 }

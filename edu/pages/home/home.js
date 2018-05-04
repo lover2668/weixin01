@@ -1,6 +1,6 @@
 // pages/home/home.js
 var newsData = require("../../data/bannerData.js");
-var albumData = require("../../data/categoryData.js");
+var albumData = require("../../data/sortData.js");
 
 Page({
 
@@ -32,7 +32,7 @@ Page({
     }
     */
 
-    "categoryData": ""
+    "sortData": ""
   },
 
   /**
@@ -45,11 +45,11 @@ Page({
     
     this.setData({
       bannerData: newsData.bannerCarousel,
-      categoryData: albumData.categoryAlbum
+      sortData: albumData.sortAlbum
     })
 
     console.log(this.data.bannerData)
-    console.log(this.data.categoryData)
+    console.log(this.data.sortData)
   },
 
   /**

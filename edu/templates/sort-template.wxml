@@ -1,0 +1,8 @@
+<template class="sortTemplate">
+  <view class="sort-container">
+    <view class="album-container">
+      <view wx:for="{{sortData.album.content}}">
+      </view>
+    </view>
+  </view>
+</template>
