@@ -5,7 +5,6 @@ var bannerCarousel = {
     "interval": 2000,
     "duration": 800,
     "circular": true,
-    "bannerData": "",
     "content": [
       {
       "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58ef9256671fa.png",

@@ -1,7 +1,12 @@
 /* pages/home/home.wxss */
-.banner-container swiper{
+.banner-container{
   width: 100%;
   height: 350rpx;
+}
+
+.banner-container swiper{
+  width: 100%;
+  height: 100%;
 }
 
 /*
