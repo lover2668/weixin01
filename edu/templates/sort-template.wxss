@@ -16,18 +16,18 @@
 }
 
 .sort-img{
-    width:100rpx;
-    height:100rpx;
+    width:64rpx;
+    height:64rpx;
     display:block;
     margin:0 auto;
     margin-bottom:5px;
     text-align: center;
 }
-.sort-desc{
+.sort-title{
     background-color:#ffffff;
     color:#333333;
     width:100%;
     text-align: center;
     display:block;
-    font-size:16px;
+    font-size:12px;
 }

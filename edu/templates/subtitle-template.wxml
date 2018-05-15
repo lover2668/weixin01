@@ -1,8 +1,11 @@
 <template name="subtitleTemplate">
   <view class="subtitle-container">
-    <image class="subtitle-img">
-    </image>
-    <text class="subtitle-txt">
-    </text>
+    <view class="subtitle-container-img" style="opacity:1" >
+      <image class="subtitle-img" mode="scaleToFill" src="http://img.weiye.me/zcimgdir/album/file_58f03d2a3a308.png">
+      </image>
+    </view>
+    <view class="subtitle-container-title"  >
+      <text class="subtitle-title" style="opacity:1">热门活动</text>
+    </view>
   </view>
 </template>

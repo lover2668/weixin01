@@ -1,12 +1,14 @@
 <!--pages/home/home.wxml-->
 <import src="../../templates/banner-template.wxml"/>
 <import src="../../templates/sort-template.wxml"/>
+<import src="../../templates/subtitle-template.wxml"/>
 
 <view>
   <template is="bannerTemplate" data="{{bannerData}}" />
   <template is="sortTemplate" data="{{sortData}}" />
 
   <view>
+  <template is="subtitleTemplate" />
   </view>
   
 </view>
