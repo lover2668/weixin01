@@ -6,4 +6,7 @@
   <template is="bannerTemplate" data="{{bannerData}}" />
   <template is="sortTemplate" data="{{sortData}}" />
 
+  <view>
+  </view>
+  
 </view>

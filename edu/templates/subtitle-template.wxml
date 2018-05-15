@@ -1,0 +1,8 @@
+<template name="subtitleTemplate">
+  <view class="subtitle-container">
+    <image class="subtitle-img">
+    </image>
+    <text class="subtitle-txt">
+    </text>
+  </view>
+</template>
