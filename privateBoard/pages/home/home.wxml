@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<import src="../../templates/banner-template.wxml"/>
+
+<view>
+  <template is="bannerTemplate" data="{{bannerData}}"></template>
+  <template is="sortTemplate" data="{{sortData}}">
+
+  <view>
+  
+  </view>
+</view>
