@@ -1,12 +1,11 @@
 <template name="bannerTemplate">
   <view class="banner-container">
-    <swiper indicator-dots="{{bannerDate.banner.indicatorDots}}" interval="{{bannerDate.banner.interval}}" duration='{{bannerDate.banner.duration}}' autoplay='{{bannerDate.banner.autoplay}}' circular='{{bannerDate.banner.circular}}'>
-      <block wx:for="{{bannerDate.banner.content}}" wx:for-item="item" wx:key="unique">
-        <swiper-item class="banner-swiper-item">
-          <image class='banner-image' src='{{item.pic}}'>
-          </image>
+    <swiper indicator-dots="{{bannerData.banner.indicatorDots}}" interval="{{bannerData.banner.interval}}" duration="{{bannerData.banner.duration}}" autoplay="{{bannerData.banner.autoplay}}" circular="{{bannerData.banner.circular}}">
+      <block  wx:for="{{bannerData.banner.content}}" wx:for-item="item" wx:key="unique">
+        <swiper-item class="banner-swiper-item" >
+          <image class="banner-img" src="{{item.pic}}"></image>
         </swiper-item>
-      </block>
+      </block >
     </swiper>
   </view>
-</template> 
+</template>

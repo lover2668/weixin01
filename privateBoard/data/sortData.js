@@ -12,23 +12,28 @@ var sortAlbum = {
         "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
       },
       {
-        "title": "课程",
+        "title": "新闻中心",
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579b77205.png",
         "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
         "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
       },
       {
-        "title": "活动",
+        "title": "企业服务",
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579fe81dc.png",
         "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
         "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
       },
-
       {
-        "title": "购物车",
+        "title": "生态系统",
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f057a2ade02.png",
         "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
         "img_style": "height:84.9609375rpx;border-radius:50%;margin-left:auto;",
+      },
+      {
+        "title": "会员申请",
+        "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f05797a81e3.png",
+        "li_style": "width:84.9609375rpx;margin-right:82.03125rpx;margin-bottom:23.4375rpx;margin-left:auto;",
+        "img_style": "height:168.9609375rpx;border-radius:50%;margin-left:auto;",
       }
     ],
   },

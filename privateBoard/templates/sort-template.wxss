@@ -1,0 +1,33 @@
+.sort-container {
+  display: flex;
+  background-color:#ffffff;
+  width: 100%;
+  margin-top: 10rpx;
+}
+
+.sort-list{
+    float:left;
+    width:100%;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    margin-top: 10rpx;
+    padding-bottom:10rpx;
+}
+
+.sort-img{
+    width:64rpx;
+    height:64rpx;
+    display:block;
+    margin:0 auto;
+    margin-bottom:5px;
+    text-align: center;
+}
+.sort-title{
+    background-color:#ffffff;
+    color:#333333;
+    width:100%;
+    text-align: center;
+    display:block;
+    font-size:12px;
+}
