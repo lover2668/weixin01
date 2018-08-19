@@ -1,32 +1,18 @@
-// pages/home/home.js
-var newsData=require("../../data/bannerData.js");
-var albumData=require("../../data/sortData.js")
-
+// pages/introduction/introduction.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bannerData": "",
-    "sortData": ""
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(this.data.bannerData)
-    console.log(newsData)
-    console.log(newsData.bannerCarousel)
-    
-    this.setData({
-      bannerData: newsData.bannerCarousel,
-      sortData: albumData.sortAlbum
-    })
-
-    console.log(this.data.bannerData)
-    console.log(this.data.sortData)
+  
   },
 
   /**

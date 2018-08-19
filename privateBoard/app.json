@@ -4,7 +4,8 @@
     "pages/bunisess/bunisess",
     "pages/financing/financing",
     "pages/member/member",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/introduction/introduction"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,7 +14,7 @@
     "onReachBottomDistance": "50",
     "navigationBarBackgroundColor": "#d81e06",
     "navigationBarTitleText": "群兴私董会",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "borderStyle": "black",
