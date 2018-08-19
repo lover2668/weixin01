@@ -3,7 +3,7 @@
 
 <view>
   <template is="bannerTemplate" data="{{bannerData}}"></template>
-  <template is="sortTemplate" data="{{sortData}}">
+  <template is="sortTemplate" data="{{sortData}}"></template>
 
   <view>
   

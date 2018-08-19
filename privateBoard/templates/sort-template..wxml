@@ -1,0 +1,11 @@
+<template name="sortTemplate">
+  <view style="{{data.style}}">
+    <view class="sort-container" >
+      <view class="sort-list" wx:for="{{sortData.album.content}}" wx:for-item="item" wx:key="unique" >
+        <image class="sort-img" src="{{item.pic}}"  mode="scaleToFill"></image>
+        <text class="sort-title">{{item.title}}</text>
+        <!-- <text class="sort-desc">{{sortData.album.content.length}}</text> -->
+      </view >
+    </view>
+  </view>
+</template>

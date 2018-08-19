@@ -1,7 +1,6 @@
 /* pages/home/home.wxss */
 @import "../../templates/banner-template.wxss";
 @import "../../templates/sort-template.wxss";
-@import "../../templates/subtitle-template.wxss";
 
 page {
   background-color: rgb(243, 243, 243);
