@@ -1,0 +1,71 @@
+<!--pages/companyServices/companyServices.wxml-->
+<view class="plate">
+  <navigator url="/pages/law/law" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f05797a81e3.png"></image>
+       </view>
+       <text class="plate-info">
+        法律
+       </text>
+  </navigator>
+  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579b77205.png"></image>
+       </view>
+       <text class="plate-info">
+        财务
+       </text>
+  </navigator>
+  <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579fe81dc.png"></image>
+       </view>
+       <text class="plate-info">
+        企管
+       </text>
+  </navigator>
+  <navigator url="/pages/about/about" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f057a2ade02.png"></image>
+       </view>
+       <text class="plate-info">
+        软件
+       </text>
+  </navigator>
+</view>
+
+
+<view class="plate">
+  <navigator url="/pages/action/action" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f05797a81e3.png"></image>
+       </view>
+       <text class="plate-info">
+        培训
+       </text>
+  </navigator>
+  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579b77205.png"></image>
+       </view>
+       <text class="plate-info">
+        招聘
+       </text>
+  </navigator>
+  <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f0579fe81dc.png"></image>
+       </view>
+       <text class="plate-info">
+        采购
+       </text>
+  </navigator>
+  <navigator url="/pages/about/about" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="http:\/\/img.weiye.me\/zcimgdir\/album\/file_58f057a2ade02.png"></image>
+       </view>
+       <text class="plate-info">
+        销售
+       </text>
+  </navigator>
+</view>

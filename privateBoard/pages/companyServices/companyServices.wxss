@@ -1,4 +1,4 @@
-/**index.wxss**/
+/* pages/companyServices/companyServices.wxss */
 
 .plate{
   height:240rpx;
@@ -14,8 +14,8 @@
   margin-left:42rpx;
 }
 .plate-img image{
-  width: 30rpx;
-  height: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 .plate-info{
   position: absolute;
@@ -23,6 +23,6 @@
   font-size: 30rpx;
   font-family: '微软雅黑';
   bottom: 60rpx;
-  left:-10rpx;
+  left:15rpx;
 
 }

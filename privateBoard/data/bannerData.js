@@ -16,6 +16,24 @@ var bannerCarousel = {
   },
 }
 
+var introductionBanner = {
+  "banner": {
+    "indicatorDots": true,
+    "autoplay": true,
+    "interval": 2000,
+    "duration": 800,
+    "circular": true,
+    "content": [
+      {
+        "pic": "../../images/introduction01.jpg",
+      },
+      {
+        "pic": "../../images/introduction02.jpg",
+      }
+    ],
+  },
+}
 module.exports = {
-  bannerCarousel: bannerCarousel
+  bannerCarousel: bannerCarousel,
+  introductionBanner: introductionBanner
 }

@@ -1,6 +1,7 @@
 <!--pages/home/home.wxml-->
 <import src="../../templates/banner-template.wxml"/>
 <import src="../../templates/sort-template.wxml"/>
+<import src="../../templates/sortNav-template.wxml"/>
 
 <view>
   <template is="bannerTemplate" data="{{bannerData}}"></template>

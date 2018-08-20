@@ -1,2 +1,10 @@
 <!--pages/introduction/introduction.wxml-->
-<text>pages/introduction/introduction.wxml</text>
+<import src="../../templates/banner-template.wxml"/>
+
+<view>
+  <template is="bannerTemplate" data="{{bannerData}}"></template>
+
+  <view>
+  
+  </view>
+</view>

@@ -2,9 +2,11 @@
   <view style="{{data.style}}">
     <view class="sort-container" >
       <view class="sort-list" wx:for="{{sortData.album.content}}" wx:for-item="item" wx:key="unique" >
-        <image class="sort-img" src="{{item.pic}}"  mode="scaleToFill"></image>
-        <text class="sort-title">{{item.title}}</text>
-        <!-- <text class="sort-desc">{{sortData.album.content.length}}</text> -->
+		  <navigator url="{{item.url}}" open-type="{{item.openType}}" hover-class="other-navigator-hover" class="plate-item">
+			<image class="sort-img" src="{{item.pic}}"  mode="scaleToFill"></image>
+			<text class="sort-title">{{item.title}}</text>
+			<!-- <text class="sort-desc">{{sortData.album.content.length}}</text> -->
+		</navigator>
       </view >
     </view>
   </view>

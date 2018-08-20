@@ -1,30 +1,18 @@
-
-var newsData = require("../../data/bannerData.js");
-
-
-// pages/introduction/introduction.js
+// pages/law/law.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bannerData": "",
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(this.data.bannerData)
-    console.log(newsData)
-    console.log(newsData.bannerCarousel)
-
-    this.setData({
-      bannerData: newsData.introductionBanner,
-    })
-
-    console.log(this.data.bannerData)
+  
   },
 
   /**

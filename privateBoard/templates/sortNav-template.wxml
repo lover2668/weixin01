@@ -1,70 +1,16 @@
-<view class="plate">
-  <navigator url="/pages/action/action" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a1src}}"></image>
-       </view>
-       <text class="plate-info">
-        活动资讯
-       </text>
-  </navigator>
-  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a2src}}"></image>
-       </view>
-       <text class="plate-info">
-        预约课程
-       </text>
-  </navigator>
-  <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a4src}}"></image>
-       </view>
-       <text class="plate-info">
-        名师简介
-       </text>
-  </navigator>
-  <navigator url="/pages/about/about" hover-class="navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a3src}}"></image>
-       </view>
-       <text class="plate-info">
-        联系我们
-       </text>
-  </navigator>
-</view>
-
-
-<view class="plate">
-  <navigator url="/pages/action/action" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a1src}}"></image>
-       </view>
-       <text class="plate-info">
-        活动资讯
-       </text>
-  </navigator>
-  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a2src}}"></image>
-       </view>
-       <text class="plate-info">
-        预约课程
-       </text>
-  </navigator>
-  <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a4src}}"></image>
-       </view>
-       <text class="plate-info">
-        名师简介
-       </text>
-  </navigator>
-  <navigator url="/pages/about/about" hover-class="navigator-hover" class="plate-item">
-     <view class="plate-img">
-       <image src="{{a3src}}"></image>
-       </view>
-       <text class="plate-info">
-        联系我们
-       </text>
-  </navigator>
-</view>
+<template name="sortNavTemplate">
+  <view style="{{data.style}}">
+    <view class="plate" >
+      <view class="sortNav-list" wx:for="{{sortNavData.navData.content}}" wx:for-item="item" wx:key="unique" >
+        <navigator url="{{item.url}}" open-type="{{item.openType}}" hover-class="other-navigator-hover" class="plate-item">
+        <view class="plate-img">
+          <image src="{{item.pic}}"></image>
+          </view>
+          <text class="plate-info">
+          {{item.title}}
+          </text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>
