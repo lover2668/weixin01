@@ -1,6 +1,6 @@
 
 var newsData = require("../../data/bannerData.js");
-
+var newsCloumnData = require("../../data/cloumnData.js");
 
 // pages/introduction/introduction.js
 Page({
@@ -10,6 +10,7 @@ Page({
    */
   data: {
     "bannerData": "",
+    "cloumnData": "",
   },
 
   /**
@@ -18,13 +19,19 @@ Page({
   onLoad: function (options) {
     console.log(this.data.bannerData)
     console.log(newsData)
-    console.log(newsData.bannerCarousel)
+    console.log(newsData.introductionBanner)
+
+    console.log(this.data.cloumnData)
+    console.log(newsCloumnData)
+    console.log(newsCloumnData.classificationCloumn)
 
     this.setData({
       bannerData: newsData.introductionBanner,
+      cloumnData: newsCloumnData.classificationCloumn,
     })
 
     console.log(this.data.bannerData)
+    console.log(this.data.cloumnData)
   },
 
   /**

@@ -21,7 +21,7 @@ var introductionBanner = {
     "indicatorDots": true,
     "autoplay": true,
     "interval": 2000,
-    "duration": 800,
+    "duration": 1000,
     "circular": true,
     "content": [
       {

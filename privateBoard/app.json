@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/introduction/introduction",
     "pages/home/home",
     "pages/bunisess/bunisess",
     "pages/financing/financing",
@@ -11,7 +12,7 @@
     "pages/ecosystem/ecosystem",
     "pages/index/index",
     "pages/internet/internet",
-    "pages/introduction/introduction",
+    
     "pages/invest/invest",
     "pages/law/law",
     "pages/logs/logs",
