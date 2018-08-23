@@ -1,5 +1,5 @@
 /* pages/introduction/introduction.wxss */
-@import "../../templates/banner-template.wxss";
+@import "../../templates/cloumn-template.wxss";
 
 page {
   background-color: rgb(243, 243, 243);
