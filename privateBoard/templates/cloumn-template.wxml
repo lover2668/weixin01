@@ -8,9 +8,6 @@
         <label class="cloumn-item item-flex flex-title"> {{item.title}} </label>
       </view>
       <text class="cloumn-item item-info">{{item.infotext}} </text>
-      <view wx:if='true' class="cloumn-item item-div" >
-        <view wx:if='true' class="cloumn-item item-div div-line"></view>
-      </view>
     </view>
   </view>
 </template>
