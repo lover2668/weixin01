@@ -15,7 +15,7 @@ var classificationCloumn = {
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_592528d724207.png",
         "url": "",
         "openType": "",
-        "divline": "false",
+        "divline": "true",
         "infotext": " \t\t使命：天下没有难做的生意。\n愿景：成为最具价值和服务力的企业家商圈互助资源平台。\n核心价值观：人人为我，我为人人，互帮互助，抱团成长。\n"
       },
       {
@@ -23,7 +23,7 @@ var classificationCloumn = {
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_592528d724207.png",
         "url": "",
         "openType": "",
-        "divline": "false",
+        "divline": "true",
         "infotext": " \t\t群兴私董会集各方之力，为会提供以下专业优质服务。\n金融：融资、资金周转。\n企管：企业经营管理。\n培训：商业培训。\n法律：合同、劳务方面法律。\n财务：发票、纳税。\n互联网：软件、互联网应用定制。"
       },
       {
@@ -31,7 +31,7 @@ var classificationCloumn = {
         "pic": "http:\/\/img.weiye.me\/zcimgdir\/album\/file_592528d724207.png",
         "url": "",
         "openType": "",
-        "divline": "false",
+        "divline": "true",
         "infotext": " \t\t我们目前会员企业28家，辐射三省六市。会员企业经营领域涉及医疗、企业管理、大健康、物联网、互联网、法律、房产基建、影视、金融。\n"
       },
       {
