@@ -1,13 +1,15 @@
 <template name="cloumnTemplate">
   <view class="classification-cloumn" >
     <view class="cloumn-list" wx:for="{{cloumnData.cloumnData.content}}" wx:for-item="item" wx:key="unique">
-      <view class="cloumn-item cloumn-flex">
-        <view class='cloumn-item cloumn-flex flex-view'>
-          <image class="cloumn-item cloumn-flex flex-view flex-img" src="{{item.pic}}" mode='scaleToFill'></image>
+      <view class="cloumn-item item-flex">
+        <view class='cloumn-item item-flex flex-view'>
+          <image class="cloumn-item item-flex flex-view flex-img" src="{{item.pic}}" mode='scaleToFill'></image>
         </view>
-        <label class="cloumn-item cloumn-flex flex-title"> {{item.title}} </label>
+        <label class="cloumn-item item-flex flex-title"> {{item.title}} </label>
       </view>
+      <view class="cloum-item item-divline"></view>
       <text class="cloumn-item item-info">{{item.infotext}} </text>
+      
     </view>
   </view>
   <view class="cloumn-123">

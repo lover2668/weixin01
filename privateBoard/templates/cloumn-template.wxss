@@ -19,7 +19,7 @@
   background: #fff;
   border-radius: 8rpx;
   width: 100%;
-  height: 30px;
+  height: auto;
   display: inline-block;
 }
 
@@ -32,14 +32,8 @@
   background: #fff;
   display: inline-block;
 }
-.divline {
-  position: relative;
-  background: #E0E3DA;
-  width: 200px;
-  height: 0px;
-  display: inline-block;
-}
-.cloumn-flex {
+
+.item-flex {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -79,6 +73,31 @@
   font-weight: 500;
   justify-content: left;
   color: rgb(65,105,225);
+}
+
+.item-info {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  font-size: 14px;
+  justify-content: left;
+}
+
+.item-divline {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: #E0E3DA;
+}
+.divline {
+  position: relative;
+  background: #E0E3DA;
+  width: 200px;
+  height: 5rpx;
+  display: inline-block;
 }
 
 .cloumn-123 {

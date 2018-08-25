@@ -7,6 +7,5 @@
   <template is="cloumnTemplate" data="{{cloumnData}}"></template>
 
   <view>
-    <image mode="scaleToFill"></image>
   </view>
 </view>
