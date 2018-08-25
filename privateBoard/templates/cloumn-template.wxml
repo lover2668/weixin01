@@ -7,7 +7,6 @@
         </view>
         <label class="cloumn-item item-flex flex-title"> {{item.title}} </label>
       </view>
-      <view class="cloum-item item-divline"></view>
       <text class="cloumn-item item-info">{{item.infotext}} </text>
       
     </view>

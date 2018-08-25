@@ -1,11 +1,13 @@
 <!--pages/introduction/introduction.wxml-->
 <import src="../../templates/banner-template.wxml"/>
 <import src="../../templates/cloumn-template.wxml"/>
+<import src="../../templates/test.wxml"/>
+
 
 <view>
   <template is="bannerTemplate" data="{{bannerData}}"></template>
   <template is="cloumnTemplate" data="{{cloumnData}}"></template>
-
+  
   <view>
   </view>
 </view>
