@@ -2,6 +2,5 @@
 @import "../../templates/cloumn-template.wxss";
 
 page {
-  background-color: rgb(243, 243, 243);
-  margin-left: auto;
+  background-color: rgb(243, 243, 253);
 }

@@ -1,59 +1,84 @@
 .classification-cloumn {
-  width: 375px;
-  height: 55px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
   margin-bottom: auto;
   margin-left: 0px;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 10px;
   opacity: 1;
-  background: rgba(0,0,0,.4);
+  background: rgb(244,164,96);
+  display: block;
 }
 
 .cloumn-list {
   position: relative;
-  top: 10px;
-  left: 10px;
-  flex-direction: row;
+  top: 0px;
+  left: 0px;
   background: #fff;
   border-radius: 8rpx;
-  width: 30px;
+  width: 100%;
   height: 30px;
-  display: block;
+  display: inline-block;
 }
 
-.cloumn-img-container {
-  position: absolute;
+.cloumn-item {
+  position: relative;
   top: 0px;
   left: 0px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  flex-direction: row;
-}
-.cloumn-img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
   width: 100%;
+  height: auto;
+  background: #fff;
+  display: inline-block;
+}
+.divline {
+  position: relative;
+  background: #E0E3DA;
+  width: 200px;
+  height: 0px;
+  display: inline-block;
+}
+.cloumn-flex {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  display: -webkit-inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.cloumn-info-container {
-  position: absolute;
-  left: 50px;
-  top: 5px;
+.flex-view {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-title {
+  position: relative;
+  top: 0px;
+  left: 20px;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.cloumn-info {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  font-size: 16px;
+  font-family: "黑体";
+  font-weight: 500;
+  justify-content: left;
+  color: rgb(65,105,225);
 }
 
 .cloumn-123 {
