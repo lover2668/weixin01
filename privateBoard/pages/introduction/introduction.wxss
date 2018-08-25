@@ -16,5 +16,6 @@ page {
   position: relative;
   width: 120px;
   height: 40px;
+  border-radius: 8px;
   background: rgb(22, 175, 68);
 }
