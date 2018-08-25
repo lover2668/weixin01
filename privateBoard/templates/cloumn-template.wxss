@@ -1,35 +1,62 @@
 .classification-cloumn {
-  position: relative;
-  top:160px;
-  left: 0;
-  width: 100%;
-  height: 100px;
+  width: 375px;
+  height: 55px;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 0px;
+  opacity: 1;
   background: rgba(0,0,0,.4);
 }
 
 .cloumn-list {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  flex-direction: row;
   background: #fff;
   border-radius: 8rpx;
-  width: auto;
-  height: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-
-.cloumn-img {
   width: 30px;
   height: 30px;
-  left: 5px;
-  display: inline-block;
+  display: block;
+}
+
+.cloumn-img-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.cloumn-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.cloumn-info-container {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.cloumn-info {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
 }
 
-.cloumn-info {
+.cloumn-123 {
   background-color: rgba(0,0,0,0);
   border-color: rgb(34,34,34);
   border-style: none;
