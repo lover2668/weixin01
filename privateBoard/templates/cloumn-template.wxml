@@ -13,7 +13,4 @@
       </view>
     </view>
   </view>
-  <view class="cloumn-123">
-  底部测试
-  </view>
 </template>

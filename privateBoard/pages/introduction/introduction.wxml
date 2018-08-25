@@ -7,7 +7,8 @@
 <view>
   <template is="bannerTemplate" data="{{bannerData}}"></template>
   <template is="cloumnTemplate" data="{{cloumnData}}"></template>
-  
-  <view>
+
+  <view class="join-view">
+    <button bindtap='joinMember' class='join-view join-butt'>加入会员</button>
   </view>
 </view>

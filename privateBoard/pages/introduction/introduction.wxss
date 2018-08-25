@@ -5,3 +5,16 @@
 page {
   background-color: rgb(243, 243, 253);
 }
+.join-view {
+  position: relative;
+  top:10px;
+  height: 60px;
+  background: #fff;
+}
+
+.join-butt {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background: rgb(22, 175, 68);
+}
