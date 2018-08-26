@@ -1,0 +1,12 @@
+<template name="testTemplate">
+  <view class="ui-coupon">
+      <view class="ui-coupon-container">
+          <view class="ui-coupon-header">
+            <view class="ui-coupon-row">文本一</view>
+          </view>
+          <view class="ui-coupon-body">
+            <view class="ui-coupon-row1">文本二</view>
+          </view>
+      </view>
+  </view>
+</template>
