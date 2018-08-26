@@ -13,6 +13,12 @@ Page({
     "cloumnData": "",
   },
 
+  joinMember: function () {
+    wx.navigateTo({
+      url: '/pages/membership/membership',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
