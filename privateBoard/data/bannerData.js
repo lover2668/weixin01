@@ -25,10 +25,10 @@ var introductionBanner = {
     "circular": true,
     "content": [
       {
-        "pic": "../../images/introduction01.jpg",
+        "pic": "../../images/introduction01.png",
       },
       {
-        "pic": "../../images/introduction02.jpg",
+        "pic": "../../images/introduction02.png",
       }
     ],
   },
