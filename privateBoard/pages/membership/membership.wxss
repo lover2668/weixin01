@@ -1,1 +1,2 @@
 /* pages/membership/membership.wxss */
+@import "../../templates/banner-template.wxss";

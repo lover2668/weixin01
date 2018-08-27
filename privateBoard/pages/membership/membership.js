@@ -1,18 +1,29 @@
 // pages/membership/membership.js
+var newsData = require("../../data/bannerData.js");
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    "bannerData": "",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(this.data.bannerData)
+    console.log(newsData)
+    console.log(newsData.membershipBanner)
+
+    this.setData({
+      bannerData: newsData.membershipBanner,
+    })
+
+    console.log(this.data.membershipBanner)
   },
 
   /**

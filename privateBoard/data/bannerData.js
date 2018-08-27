@@ -33,7 +33,24 @@ var introductionBanner = {
     ],
   },
 }
+
+var membershipBanner = {
+  "banner": {
+    "indicatorDots": false,
+    "autoplay": false,
+    "interval": 0,
+    "duration": 0,
+    "circular": false,
+    "content": [
+      {
+        "pic": "../../images/membership.png",
+      }
+    ],
+  },
+}
+
 module.exports = {
   bannerCarousel: bannerCarousel,
-  introductionBanner: introductionBanner
+  introductionBanner: introductionBanner,
+  membershipBanner: membershipBanner
 }

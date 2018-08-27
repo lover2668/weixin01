@@ -1,2 +1,7 @@
 <!--pages/membership/membership.wxml-->
-<text>pages/membership/membership.wxml</text>
+<import src="../../templates/banner-template.wxml"/>
+
+<view>
+  <template is="bannerTemplate" data="{{bannerData}}"></template>
+
+</view>
