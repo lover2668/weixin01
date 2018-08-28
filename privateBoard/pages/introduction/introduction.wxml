@@ -9,6 +9,6 @@
   <template is="cloumnTemplate" data="{{cloumnData}}"></template>
 
   <view class="join-view">
-    <button bindtap='joinMember' class='join-view join-butt' hover-class='button-hover'>加入会员</button>
+    <button bindtap='joinMember' class='join-view join-butt' hover-class='button-hover'>会员申请</button>
   </view>
 </view>
