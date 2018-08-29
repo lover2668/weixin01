@@ -1,6 +1,6 @@
 // pages/membership/membership.js
 var newsData = require("../../data/bannerData.js");
-
+var registerInfoData = require("../../data/registerData.js");
 
 Page({
 
@@ -9,6 +9,7 @@ Page({
    */
   data: {
     "bannerData": "",
+    "registerData": "",
   },
 
   /**
@@ -19,8 +20,12 @@ Page({
     console.log(newsData)
     console.log(newsData.membershipBanner)
 
+    console.log(registerData)
+
     this.setData({
       bannerData: newsData.membershipBanner,
+      registerData: registerInfoData.registerInfoData,
+      https://www.jb51.net/article/100006.htm
     })
 
     console.log(this.data.membershipBanner)
