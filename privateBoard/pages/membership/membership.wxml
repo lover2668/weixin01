@@ -4,4 +4,28 @@
 <view>
   <template is="bannerTemplate" data="{{bannerData}}"></template>
 
+  <view>
+    <text>"姓名："</text>
+  </view>
+  <view>
+    <text>"性别："</text>
+  </view>
+  <view>
+    <text>"企业类型："</text>
+  </view>
+  <view>
+    <text>"企业姓名："</text>
+  </view>
+  <view>
+    <text>"证件类型："</text>
+  </view>
+  <view>
+    <text>"证件号码："</text>
+  </view>
+  <view>
+    <text>"手机号码："</text>
+   </view>
+  <view>
+    <text>"验证码："</text>
+  </view>
 </view>

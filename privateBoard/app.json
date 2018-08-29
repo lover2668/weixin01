@@ -1,11 +1,11 @@
 {
   "pages": [
-    
+    "pages/membership/membership",
     "pages/home/home",
     "pages/bunisess/bunisess",
     "pages/financing/financing",
     "pages/member/member",
-    "pages/membership/membership",
+    
     "pages/mine/mine",
     "pages/companyServices/companyServices",
     "pages/conference/conference",
