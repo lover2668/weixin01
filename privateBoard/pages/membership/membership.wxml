@@ -3,8 +3,8 @@
 <import src="../../templates/register-template.wxml"/>
 
 <view>
-  <template is="bannerTemplate" data="{{bannerData}}"></template>
-  <template is="registerTemplate" data="{{bannerData}}"></template>
+  <template is="bannerTemplate" data="{{...bannerData}}"></template>
+  <template is="registerTemplate" data="{{...registerData}}"></template>
 
   <view>
     <text>"姓名："</text>

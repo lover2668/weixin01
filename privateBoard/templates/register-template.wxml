@@ -1,0 +1,63 @@
+<template name="registerTemplate">
+  <view class="register-container">
+    <block  wx:for="{{registerData.registerInfo.content}}" wx:for-item="item" wx:key="unique">
+      <view class="registerinfo-type" wx:if="{{item.type=='name'}}">
+        <view class="registerinfo-view">
+          <input class="registerinfo-input" name="{{item.name}}" placeholder="{{item.placeholder}}" bindinput="{{item.bindchange}}"></input>
+        </view>
+      </view>
+      <view class="registerinfo-type" wx:if="{{item.type=='phone'}}">
+        <view class="registerinfo-view">
+          <input class="registerinfo-input" name="{{item.name}}" placeholder="{{item.placeholder}}" bindinput="{{item.bindchange}}"></input>
+        </view>
+      </view>
+      <view class="registerinfo-type" wx:if="{{item.type=='radio'}}">
+        <radio-group class="registerinfo-radio-group" bindchange="{{item.bindchange}}">
+            <label class="registerinfo-radio" wx:for="{{itemradio}}">
+                <radio value='{{itemradio.name}}' checked='{{itemradio.checked}}'/>{{itemradio.value}}
+            </label>
+        </radio-group>
+      </view>
+      <view class="registerinfo-type" wx:if="{{item.type=='picker'}}">
+        <view>{{item.name}}</view>
+        <view wx:if="{{item.mode=='selector'}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" bindcancel="{{item.bindcancel}}" value='{{item.extendValue}}' range="{{item.extendData}}" disabled='{{item.disable}}'>
+              <view>
+                <text>{{item.extendData[casIndex]}}</text>
+              </view>
+          </picker>
+        </view>
+        <view wx:if="{{item.mode=='multiSelector'}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.extendValue}}' range="{{item.extendData}}">
+              <view>
+                <text>{{item.extendData[casIndex]}}</text>
+              </view>
+          </picker>
+        </view>
+        <view wx:if="{{item.mode=='time'}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+              <view>
+                <text>{{item.extendData[casIndex]}}</text>
+              </view>
+          </picker>
+        </view>
+        <view wx:if="{{item.mode=='date'}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+              <view>
+                <text>{{item.extendData[casIndex]}}</text>
+              </view>
+          </picker>
+        </view>
+        <view wx:if="{{item.mode=='region'}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+              <view>
+                <text>{{item.extendData[casIndex]}}</text>
+              </view>
+          </picker>
+        </view>
+      </view>
+    </block>
+
+
+  </view>
+</template>

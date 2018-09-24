@@ -20,12 +20,11 @@ Page({
     console.log(newsData)
     console.log(newsData.membershipBanner)
 
-    console.log(registerData)
+    console.log(registerInfoData)
 
     this.setData({
       bannerData: newsData.membershipBanner,
       registerData: registerInfoData.registerInfoData,
-      https://www.jb51.net/article/100006.htm
     })
 
     console.log(this.data.membershipBanner)
