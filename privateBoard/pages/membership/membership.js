@@ -9,8 +9,23 @@ Page({
    */
   data: {
     "bannerData": "",
-    "registerData": "",
+    items: [
+      {name: '男', checked: true},
+      {name: '女', checked: false}
+    ],
+    companyindex: 0,
+    companytype: ['事业单位', '公益单位', '有限公司', '集团公司', '私营企业', '合资企业', '外资企业', '个体工商户', '其他'],
+    credtype: ['身份证', '护照', '驾驶证', '其他'],
   },
+
+
+  bindpickerchange: function (e) {
+    console.log(this.data.companytype[e.detail.value])
+    this.setData({
+      companyindex: e.detail.value
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

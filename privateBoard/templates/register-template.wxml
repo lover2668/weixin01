@@ -21,35 +21,35 @@
       <view class="registerinfo-type" wx:if="{{item.type=='picker'}}">
         <view>{{item.name}}</view>
         <view wx:if="{{item.mode=='selector'}}">
-          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" bindcancel="{{item.bindcancel}}" value='{{item.extendValue}}' range="{{item.extendData}}" disabled='{{item.disable}}'>
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" bindcancel="{{item.bindcancel}}" value='{{item.value}}' range="{{item.extendData}}" disabled='{{item.disable}}'>
               <view>
-                <text>{{item.extendData[casIndex]}}</text>
+                <text>{{item.extendData["{{item.value}}"]}}</text>
               </view>
           </picker>
         </view>
         <view wx:if="{{item.mode=='multiSelector'}}">
-          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.extendValue}}' range="{{item.extendData}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" bindcolumnchange="{{item.bindcolumnchange}}" value='{{item.value}}' range="{{item.extendData}}">
               <view>
-                <text>{{item.extendData[casIndex]}}</text>
+                <text>{{item.extendData[0]}}</text>
               </view>
           </picker>
         </view>
         <view wx:if="{{item.mode=='time'}}">
-          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.value}}' start="{{item.start}}" end="{{item.end}}">
               <view>
                 <text>{{item.extendData[casIndex]}}</text>
               </view>
           </picker>
         </view>
         <view wx:if="{{item.mode=='date'}}">
-          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" data-model="component" data-method="{{item.bindmethod}}" data-name="{{item.name}}" bindchange="{{item.bindchange}}" value='{{item.value}}' start="{{item.start}}" end="{{item.end}}">
               <view>
                 <text>{{item.extendData[casIndex]}}</text>
               </view>
           </picker>
         </view>
         <view wx:if="{{item.mode=='region'}}">
-          <picker class="registerinfo-picker" mode="{{item.mode}}" bindchange="{{item.bindchange}}" value='{{item.casIndex1}}' range="{{item.extendData}}">
+          <picker class="registerinfo-picker" mode="{{item.mode}}" data-model="component" data-name="{{item.name}}" bindchange="{{item.bindchange}}" value='{{item.value}}' range="{{item.extendData}}">
               <view>
                 <text>{{item.extendData[casIndex]}}</text>
               </view>

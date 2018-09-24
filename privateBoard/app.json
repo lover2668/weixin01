@@ -5,7 +5,6 @@
     "pages/bunisess/bunisess",
     "pages/financing/financing",
     "pages/member/member",
-    
     "pages/mine/mine",
     "pages/companyServices/companyServices",
     "pages/conference/conference",
@@ -17,7 +16,8 @@
     "pages/law/law",
     "pages/logs/logs",
     "pages/news/news",
-    "pages/train/train"
+    "pages/train/train",
+    "pages/login/login"    
   ],
   "window": {
     "backgroundTextStyle": "light",

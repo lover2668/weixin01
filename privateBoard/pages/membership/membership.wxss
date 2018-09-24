@@ -1,2 +1,31 @@
 /* pages/membership/membership.wxss */
 @import "../../templates/banner-template.wxss";
+
+/* 自定义 radio 样式 */
+radio{
+    width: 88rpx;
+}
+ 
+radio .wx-radio-input{
+    border-radius: 100%; 
+    width: 28rpx;
+    height: 28rpx;
+}
+ 
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius: 50%;
+    width: 44rpx; 
+    height: 44rpx; /
+    line-height: 44rpx;
+    text-align: center;
+    font-size: 26rpx; /* 对勾大小 26rpx */
+    color:#fff; /* 对勾颜色 */
+    background: #2facff;
+    border-color: #2facff;
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

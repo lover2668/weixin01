@@ -1,33 +1,51 @@
 <!--pages/membership/membership.wxml-->
 <import src="../../templates/banner-template.wxml"/>
-<import src="../../templates/register-template.wxml"/>
 
 <view>
   <template is="bannerTemplate" data="{{...bannerData}}"></template>
-  <template is="registerTemplate" data="{{...registerData}}"></template>
 
   <view>
-    <text>"姓名："</text>
+    <label>姓名：</label>
+    <input class="nickname" placeholder='请输入姓名' maxlength='10'></input>
   </view>
   <view>
-    <text>"性别："</text>
+    <label>性别：</label>
+    <radio-group class="radio-group" bindchange="chageSex">
+      <label class="radio-item" wx:key='memreg' wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
+      </label>
+    </radio-group>
+  </view>
+  <view class="section">
+    <view class="section_title">企业类型：</view>
+    <picker bindchange="bindpickerchange" value="{{companyindex}}" range="{{companytype}}">
+      <view class="picker">
+        {{companytype[companyindex]}}
+      </view>
+    </picker>
   </view>
   <view>
-    <text>"企业类型："</text>
+    <label>企业全称：</label>
+    <input class="companyname" placeholder='请输入公司全称' maxlength='100'></input>
   </view>
   <view>
-    <text>"企业姓名："</text>
+    <label>证件类型：</label>
+    <picker bindchange="bindpickerchange" value="{{companyindex}}" range="{{credtype}}">
+      <view class="picker">
+        {{credtype[companyindex]}}
+      </view>
+    </picker>
   </view>
   <view>
-    <text>"证件类型："</text>
+    <label>证件号码：</label>
+    <input class="crednumber" placeholder='请输入证件号码' maxlength='20'></input>
   </view>
   <view>
-    <text>"证件号码："</text>
-  </view>
-  <view>
-    <text>"手机号码："</text>
+    <label>手机号码：</label>
+    <input class="phone" placeholder='请输入手机号码' maxlength='11'></input>
    </view>
   <view>
-    <text>"验证码："</text>
+    <input class="phone" placeholder='请先获取验证码' maxlength='11'></input>
+    <label>验证码：</label>
   </view>
 </view>
