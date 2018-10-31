@@ -1,7 +1,7 @@
 //app.js
 App({
     config: {
-        host: 'mp.techird.cn'
+        host: 'www.5guanjia.com'
     },
     onLaunch () {
         console.log('App.onLaunch()');

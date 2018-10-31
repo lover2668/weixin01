@@ -50,5 +50,43 @@ Page({
         });
       }
     });
+  },
+  /**
+ * 获取当前网络状态
+ */
+  getNetWorkType: function () {
+    wx.getNetworkType({
+      success: function (res) {
+        console.log(res)
+      }
+    })
+  },
+
+  /**
+   *  获取系统信息
+   */
+  getSystemInfo: function () {
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res)
+      }
+    })
+  },
+  /**
+   *  监听重力感应数据     
+   *      - 带on开头的都是监听接收一个callback
+   */
+  onAccelerometerChange: function () {
+    wx.onAccelerometerChange(function (res) {
+      console.log(res)
+    })
+  },
+  /**
+ *  监听罗盘数据
+ */
+  onCompassChange: function () {
+    wx.onCompassChange(function (res) {
+      console.log(res)
+    })
   }
 });

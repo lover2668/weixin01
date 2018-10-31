@@ -12,5 +12,17 @@
     </view>
     <view class="command">
         <button wx:if="{{status != 'success'}}" type="primary" bindtap="request" disabled="{{requesting}}">获取会话</button>
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
     </view>
+    <view>
+      <text>" "</text>
+    </view>
+        <open-data type="userNickName"></open-data>
+        <open-data type="groupName" open-gid="xxxxxx"></open-data>
+        <open-data type="userAvatarUrl"></open-data>
+        <open-data type="userGender" lang="zh_CN"></open-data>
+        <open-data type="userCity" lang="zh_CN"></open-data>
+        <open-data type="userProvince" lang="zh_CN"></open-data>
+        <open-data type="userCountry" lang="zh_CN"></open-data>
+        <open-data type="userLanguage"></open-data>
 </view>

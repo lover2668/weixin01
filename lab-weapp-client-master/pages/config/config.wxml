@@ -10,4 +10,5 @@
         <view class="line">{{host}}</view>
     </view>
     <view class="command"></view>
+    <button open-type="contact">进入客服会话</button>
 </view>
