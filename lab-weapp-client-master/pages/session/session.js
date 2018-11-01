@@ -25,6 +25,7 @@ Page({
       url: this.data.url,
       method: 'GET',
       success: (res) => {
+        console.log("url:", this.data.url)
         if (+res.statusCode == 200) {
           if (res.data.openId) {
             this.setData({
