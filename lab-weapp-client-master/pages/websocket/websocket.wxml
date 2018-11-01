@@ -10,7 +10,7 @@
         <view class="line">{{url}}</view>
     </view>
     <view class="command">
-        <button type="primary" bindtap="connect" disabled="{{connecting || status == 'success'}}">连接</button>
+        <button type="primary" open-type='getUserInfo ' bindgetuserinfo="onGotUserInfo" bindtap="connect" disabled="{{connecting || status == 'success'}}">连接</button>
         <button bindtap="send" disabled="{{ status != 'success' }}">发送消息</button>
         <button bindtap="close" disabled="{{ status != 'success' }}">断开</button>
     </view>

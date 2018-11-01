@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/membership/membership",
     "pages/home/home",
+    "pages/membership/membership",
+    
     "pages/bunisess/bunisess",
     "pages/financing/financing",
     "pages/member/member",
@@ -27,6 +28,7 @@
     "navigationBarBackgroundColor": "#d81e06",
     "navigationBarTitleText": "群兴私董会",
     "navigationBarTextStyle": "white"
+    
   },
   "tabBar": {
     "borderStyle": "black",
