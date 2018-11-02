@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
   /**
@@ -74,4 +74,71 @@ Page({
       delta: 1
     })
   }
+  
+
+
+  /*
+                  data: {
+                  code: loginRes.code,                  //临时登录凭证
+                  rawData: infoRes.rawData,             //用户非敏感信息
+                  signature: infoRes.signature,         //签名
+                  encryptedData: infoRes.encryptedData, //用户敏感信息
+                  iv: infoRes.iv                        //解密算法的向量
+                },
+*/
+                /*
+                * 获取用户信息 期望数据如下
+                *
+                * userInfo			[Object]
+                * rawData			[Object]
+                * signature		[Object]
+                * encryptedData	[Object]
+                * iv				[Object]
+                *
+                **/
+                /*
+                wx.getUserInfo({
+    withCredentials: true, //非必填,默认为true
+
+    success: function (infoRes) {
+      console.log("[doLogin] loginRes.code:", loginRes.code);
+      console.log("[doLogin] infoRes:", infoRes);
+      console.log("[doLogin] infoRes.rawData:", infoRes.rawData);
+      console.log("[doLogin] infoRes.signature:", infoRes.signature);
+      console.log("[doLogin] infoRes.encryptedData:", infoRes.encryptedData);
+      console.log("[doLogin] infoRes.iv:", infoRes.iv);
+      console.log("[doLogin] url:", that.globalData.url);
+    },
+    fail: function (error) {
+      //获取userInfo失败,去检查是否未开启权限
+      console.log('wx.getUserInfo fail');
+      wx.hideLoading();
+      //that.checkUserInfoPermission();
+
+      wx.showModal({
+        title: '警告',
+        content: '尚未进行授权,请点击确定跳转到授权页面进行授权。',
+
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定');
+
+            wx.navigateTo({
+              url: '/pages/authorization/authorization',
+            })
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          } else {
+            console.log('不确定操作')
+          }
+        },
+      });
+
+      that.checkUserInfoPermission();
+    },
+    complete: function () {
+      console.log('wx.getUserInfo complete');
+    }
+  });
+  */
 })

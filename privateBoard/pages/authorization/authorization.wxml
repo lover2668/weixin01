@@ -4,3 +4,6 @@
 <view>
   <button open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo'>授权登录</button>
 </view>
+<view>
+    <button open-type="getUserInfo" bindgetuserinfo="login" wx:if="{{ canIUse }}">登录</button>
+</view>
