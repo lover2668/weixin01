@@ -6,9 +6,14 @@ App({
   },
   onLaunch: function (options) {
     // 展示本地存储能力
+    console.log('onLaunch start...')
+    console.log('options:', options)
+
+    let that =this;
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    console.log('logs:', logs)
 
     // 判断是否由分享进入小程序
     if (options.scene == 1007 || options.scene == 1008) {
@@ -17,6 +22,7 @@ App({
       this.globalData.share = false
     };
     console.log("Share:", this.globalData.share)
+
 
     //获取设备顶部窗口的高度（不同设备窗口高度不一样，根据这个来设置自定义导航栏的高度）
     //这个最初我是在组件中获取，但是出现了一个问题，当第一次进入小程序时导航栏会把
@@ -28,13 +34,26 @@ App({
         console.log("height:", this.globalData.height)
       }
     })
-
+  
     
     // 登录
     wx.login({
       success: res => {
         console.log("login resource:", res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+
+        console.log("res.code:", res.code)
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://www.5guanjia.com/login',
+            data: {
+              code: res.code
+            }
+          })
+      } else {
+          console.log('获取用户登录态失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息
@@ -57,12 +76,12 @@ App({
                 this.userInfoReadyCallback(res)
               }
             },
-      fail: res => {
-        console.log("getSetting fail...")
-      },
-      complete: res => {
-        console.log("getSetting complete...")
-      }
+            fail: res => {
+              console.log("getSetting fail...")
+            },
+            complete: res => {
+              console.log("getSetting complete...")
+            }
           })
         }
       }
