@@ -2,7 +2,6 @@
   "pages": [
     "pages/home/home",
     "pages/membership/membership",
-    
     "pages/bunisess/bunisess",
     "pages/financing/financing",
     "pages/member/member",
@@ -18,7 +17,8 @@
     "pages/logs/logs",
     "pages/news/news",
     "pages/train/train",
-    "pages/login/login"    
+    "pages/login/login",
+    "pages/authorization/authorization"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +28,6 @@
     "navigationBarBackgroundColor": "#d81e06",
     "navigationBarTitleText": "群兴私董会",
     "navigationBarTextStyle": "white"
-    
   },
   "tabBar": {
     "borderStyle": "black",

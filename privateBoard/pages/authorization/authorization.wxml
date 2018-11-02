@@ -1,0 +1,6 @@
+<!--pages/authorization/authorization.wxml-->
+<text>pages/authorization/authorization.wxml</text>
+
+<view>
+  <button open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo'>授权登录</button>
+</view>
