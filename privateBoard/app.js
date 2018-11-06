@@ -2,7 +2,7 @@
 //自定义标题栏方法在windows中加入"navigationStyle": "custom"
 App({
   config: {
-    host: 'www.5guanjia.com' // 这个地方填写你的域名
+    host: 'xcx.qunxing.club' // 这个地方填写你的域名
   },
   onLaunch: function (options) {
     // 展示本地存储能力
@@ -58,6 +58,8 @@ App({
         success: function (loginRes) {
             console.log("[doLogin] loginRes:", loginRes);
             console.log("[doLogin] loginRes.code:", loginRes.code);
+
+          console.log("[doLogin] url:", that.globalData.url);
 
             if (loginRes.code) {
               //请求服务端的登录接口
@@ -173,8 +175,11 @@ App({
   },
 
   globalData: {
-    url: 'https://www.5guanjia.com',
+    url: 'https://xcx.qunxing.club',
     share: false,
+    IsLogin: false,
+    IsAuthorithize: false,
+    IsRegister: false,
     height: 0,
     userInfo: null,
   }
