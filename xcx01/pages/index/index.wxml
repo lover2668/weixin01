@@ -1,22 +1,9 @@
 <!--index.wxml-->
-<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{duration}}' current='{{current}}'>
-  <block wx:for="{{imgUrls}}" wx:key="id">
-    <swiper-item bindtap="redirectClick" data-index="{{index}}" data-id="{{item.id}}" data-link="{{item.link}}" data-url="{{item.url}}">
-      <navigator url="{{item.link}}" hover-class='navigator-hover'>
-        <image src="{{item.url}}" class="slide-img" width="500" height="400" />
-      </navigator>
-    </swiper-item>
-  </block>
-</swiper>
-
-<include src="info.wxml"/>
-<view> body </view>
-
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>

@@ -32,7 +32,7 @@
         "iconPath": "images/course_default.png",
         "selectedIconPath": "images/course_select.png",
         "text": "课程",
-        "pagePath": "pages/course/course"
+        "pagePath": "pages/index/index"
       },
       {
         "iconPath": "images/student_default.png",

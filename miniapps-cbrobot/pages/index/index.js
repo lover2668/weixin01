@@ -4,10 +4,12 @@ const app = getApp()
 
 Page({
   data: {
+    ///*
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+    //*/
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,7 +18,13 @@ Page({
     })
   },
   onLoad: function () {
+    console.log("hasUserInfo:", app.globalData.hasUserInfo)
+    console.log("canIUse:", app.globalData.canIUse)
+    console.log("userInfo:", app.globalData.userInfo)
+
     if (app.globalData.userInfo) {
+      console.log("userInfo vaild")
+      
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
