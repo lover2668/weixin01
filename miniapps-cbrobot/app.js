@@ -175,7 +175,7 @@ App({
   },
 
   globalData: {
-    url: 'https://codexcx.5guanjia.com',
+    url: 'https://cbrobotminiapps.5guanjia.com',
     share: false,
     IsLogin: false,
     IsAuthorithize: false,
