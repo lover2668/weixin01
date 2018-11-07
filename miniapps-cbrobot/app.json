@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/course/course",
     "pages/mine/mine",
-    "pages/student/student"
+    "pages/student/student",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
