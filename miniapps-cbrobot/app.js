@@ -9,6 +9,9 @@ App({
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
+
+    console.log('logs:', logs)
+
     wx.setStorageSync('logs', logs)
 
     //检查登录状态
@@ -32,7 +35,8 @@ App({
           if (userStorageInfo) {
             that.globalData.userInfo = JSON.parse(userStorageInfo);
             console.log("[checkLoginStatus] userInfo:", that.globalData.userInfo);
-          } else {
+          } 
+          else {
             that.showInfo('缓存信息缺失');
             console.error('登录成功后将用户信息存在Storage的userStorageInfo');
           }
@@ -45,7 +49,8 @@ App({
           console.log("wx.checkSession complete");
         }
       });
-    } else {
+    } 
+    else {
       //无登录态
       that.doLogin();
     }
@@ -62,10 +67,24 @@ App({
         console.log("[doLogin] url:", that.globalData.url);
 
         if (loginRes.code) {
+          console.log("[doLogin] start wx.request...");
+ 
+ 
           //请求服务端的登录接口
           wx.request({
             //url: api.loginUrl,
             url: that.globalData.url,
+
+            data: {
+              openid: loginRes.code,
+              grant_type: 'authorization_code'
+            },
+
+            header: {
+              'content-type': 'application/json'
+            },
+
+            method: "Get",
 
             success: function (res) {
               console.log("[doLogin] : login success");
@@ -95,7 +114,8 @@ App({
               console.log('wx.request complete');
             }
           });
-        } else {
+        }
+        else {
           //获取code失败
           that.showInfo('登录失败');
           console.log('调用wx.login获取code失败' + res.errMsg);
@@ -176,6 +196,7 @@ App({
 
   globalData: {
     url: 'https://cbrobotminiapps.5guanjia.com',
+    //url:'http://localhost:3000',
     share: false,
     IsLogin: false,
     IsAuthorithize: false,
