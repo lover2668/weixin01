@@ -108,10 +108,4 @@ Page({
       })
     }
   },
-
-  getUsername: function (e) {
-  },
-
-  getUsername: function (e) {
-  },
 })
